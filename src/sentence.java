@@ -2,9 +2,12 @@ public class sentence {
     private WordTaker wt;
     private String sentence;
     private probability prob;
-    private String sub,prdc,obj,tense,advb,atbt,intj="";
+    private String charactor_sub,charactor_obj,sub,prdc,obj,tense,advb,atbt_sub,atbt_sub_charactor,atbt_obj,atbt_obj_charactor,intj="";//random
+    private String SUB,OBJ,ATBT_SUB,ATBT_OBJ="";//final-decided by message
+    private String message;
 
-    public String makeSentence(){
+    public String makeSentence(String message){
+        this.message=message;
         int mode;
         // 1:µ¥¾ä     2£º¸´¾ä
         if(prob.aBoolean(70)){
@@ -100,18 +103,30 @@ public class sentence {
         if(prob.aBoolean(40)) advb=wt.getConst("advb").getVal();
         else advb="";
 
-        atbt="";
-        if(prob.aBoolean(30)) atbt=atbt+wt.getConst("atb");
-        if(prob.aBoolean(40))atbt=atbt+wt.getConst("atbt");
+        atbt_sub="";
+        if(prob.aBoolean(30)) atbt_sub=atbt_sub+wt.getConst("atb");
+        if(prob.aBoolean(40))atbt_sub=atbt_sub+wt.getConst("atbt");
+        atbt_obj="";
+        if(prob.aBoolean(30)) atbt_obj=atbt_obj+wt.getConst("atb");
+        if(prob.aBoolean(40))atbt_obj=atbt_obj+wt.getConst("atbt");
+        atbt_sub_charactor="";
+        if(prob.aBoolean(40)) atbt_sub_charactor=atbt_sub_charactor+wt.getConst("atbt");
+        atbt_obj_charactor="";
+        if(prob.aBoolean(40)) atbt_obj_charactor=atbt_obj_charactor+wt.getConst("atbt");
 
         if(prob.aBoolean(5)) intj=wt.getConst("intj").getVal();
         else intj="";
+    }
 
+    private void MessageHandler(){
 
     }
+
     private String Declarative(){
         String rt="";
-
+        getWords();
+        MessageHandler();
+        rt=ATBT_SUB+SUB+tense+advb+prdc+ATBT_OBJ+OBJ+intj+"¡£";
         return rt;
     }
     private String Question(){
