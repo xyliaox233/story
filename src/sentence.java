@@ -1,9 +1,10 @@
 import java.util.Calendar;
 
 public class sentence {
-    public WordTaker wt;
+    private WordTaker wt;
     private String sentence;
     private probability prob;
+    private String sub,prdc,obj,tense,advb,atbt,intj;
 
     public String makeSentence(){
         int mode;
@@ -59,8 +60,51 @@ public class sentence {
                 return null;
         }
     }
+    private void getWords(){
+        sub=wt.getConst("sub").getVal();
+        prdc p= ( prdc ) wt.getConst("prdc");
+        prdc=p.getVal();
+        if(p.isTrans()){
+            obj=wt.getConst("obj").getVal();
+        }else obj="";
+
+        switch (p.getTense()){
+            case 0:
+                tense="曾经";
+                if(!p.isSp()){
+                    if(p.isDur())prdc=prdc+"着";
+                    else {
+                        String[] strings={"了","过"};
+                        prdc=prdc+strings[prob.anInt(strings.length)];
+                    }
+                }
+                break;
+            case 2:
+                tense="将";
+                if(!p.isSp()){
+                    if(p.isDur())prdc=prdc+"着";
+                    else {
+                        String[] strings={"会","要"};
+                        tense=tense+strings[prob.anInt(strings.length)];
+                    }
+                }
+                break;
+            case 1:
+                if(p.isDur()){
+                    tense="正在";
+                    prdc=prdc+"着";
+                }
+        }
+
+        if(prob.aBoolean(40)) advb=wt.getConst("advb").getVal();
+        else advb="";
+        if(prob.aBoolean(40)) {}
+
+
+    }
     private String Declarative(){
         String rt="";
+
         return rt;
     }
     private String Question(){

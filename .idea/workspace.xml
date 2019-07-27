@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="561abc8b-2d50-42e5-b472-654de4dca9b5" name="Default Changelist" comment="">
+    <list default="true" id="561abc8b-2d50-42e5-b472-654de4dca9b5" name="Default Changelist" comment="!">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scene/场景.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scene/废弃铁轨/环境词库.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scene/恶灵古堡/环境词库.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scene/精灵之森/0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scene/精灵之森/0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scene/精灵之森/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scene/精灵之森/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scene/精灵之森/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scene/精灵之森/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scene/精灵之森/环境词库.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scene/黑龙峡谷/环境词库.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WordTaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordTaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/prdc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/prdc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentence.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,20 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sub.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="88">
+              <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -53,32 +37,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="1197">
+              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/atb.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="e#95#96#0" expanded="true" />
-                <element signature="e#121#122#0" expanded="true" />
-                <element signature="e#151#152#0" expanded="true" />
-                <element signature="e#177#178#0" expanded="true" />
-                <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#245#246#0" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/prdc.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <caret line="2" column="57" lean-forward="true" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
               <folding>
                 <element signature="e#646#647#0" expanded="true" />
                 <element signature="e#674#675#0" expanded="true" />
@@ -119,12 +84,18 @@
         <option value="$PROJECT_DIR$/src/obj.java" />
         <option value="$PROJECT_DIR$/src/atbt.java" />
         <option value="$PROJECT_DIR$/src/advb.java" />
-        <option value="$PROJECT_DIR$/src/sentence.java" />
         <option value="$PROJECT_DIR$/src/intj.java" />
         <option value="$PROJECT_DIR$/src/sentence_const.java" />
-        <option value="$PROJECT_DIR$/src/atb.java" />
         <option value="$PROJECT_DIR$/src/prdc.java" />
         <option value="$PROJECT_DIR$/src/WordTaker.java" />
+        <option value="$PROJECT_DIR$/src/sentence.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
       </list>
     </option>
   </component>
@@ -139,8 +110,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,7 +136,6 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -212,8 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564069977499</updated>
       <workItem from="1564069980555" duration="1182000" />
-      <workItem from="1564142159858" duration="10593000" />
-      <workItem from="1564217105969" duration="3110000" />
+      <workItem from="1564142159858" duration="9477000" />
     </task>
     <task id="LOCAL-00001" summary="!">
       <created>1564144910823</created>
@@ -222,38 +191,17 @@
       <option name="project" value="LOCAL" />
       <updated>1564144910823</updated>
     </task>
-    <task id="LOCAL-00002" summary="!">
-      <created>1564153758369</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1564153758369</updated>
-    </task>
-    <task id="LOCAL-00003" summary="!">
-      <created>1564153830658</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1564153830658</updated>
-    </task>
-    <task id="LOCAL-00004" summary="!">
-      <created>1564218912105</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1564218912105</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14885000" />
+    <option name="totallyTimeSpent" value="10659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20174263" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20174263" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -262,7 +210,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -292,62 +240,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="!" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/及物动词.txt" />
+    <entry file="file://$PROJECT_DIR$/及物动词.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sentence_constituents.java" />
-    <entry file="file://$PROJECT_DIR$/src/atbt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/obj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/advb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/intj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sentence_const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="e#117#118#0" expanded="true" />
-            <element signature="e#99#100#0" expanded="true" />
-            <element signature="e#129#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sentence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/atbt.java" />
+    <entry file="file://$PROJECT_DIR$/src/obj.java" />
+    <entry file="file://$PROJECT_DIR$/src/sub.java" />
+    <entry file="file://$PROJECT_DIR$/src/advb.java" />
+    <entry file="file://$PROJECT_DIR$/src/intj.java" />
     <entry file="file://$PROJECT_DIR$/src/probability.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -355,19 +256,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/atb.java">
+    <entry file="file://$PROJECT_DIR$/src/sentence_const.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="1197">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
           <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#121#122#0" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -375,7 +272,7 @@
     <entry file="file://$PROJECT_DIR$/src/prdc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <caret line="2" column="57" lean-forward="true" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
           <folding>
             <element signature="e#646#647#0" expanded="true" />
             <element signature="e#674#675#0" expanded="true" />
@@ -385,13 +282,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
+    <entry file="file://$PROJECT_DIR$/src/sentence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
         </state>
       </provider>
     </entry>

@@ -108,10 +108,11 @@ public class WordTaker {
         }
         return list;
     }
-
+/*
     public static void main(String[] args) {
         WordTaker wt=new WordTaker();
         sentence_const sc=wt.getConst("prdc");
         System.out.println(sc.getVal());
     }
+ */
 }
