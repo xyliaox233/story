@@ -1,10 +1,8 @@
-import java.util.Calendar;
-
 public class sentence {
     private WordTaker wt;
     private String sentence;
     private probability prob;
-    private String sub,prdc,obj,tense,advb,atbt,intj;
+    private String sub,prdc,obj,tense,advb,atbt,intj="";
 
     public String makeSentence(){
         int mode;
@@ -70,7 +68,8 @@ public class sentence {
 
         switch (p.getTense()){
             case 0:
-                tense="曾经";
+                if(prob.aBoolean(50))tense="曾经";
+                else tense="";
                 if(!p.isSp()){
                     if(p.isDur())prdc=prdc+"着";
                     else {
@@ -80,7 +79,8 @@ public class sentence {
                 }
                 break;
             case 2:
-                tense="将";
+                if(prob.aBoolean(50))tense="将";
+                else tense="";
                 if(!p.isSp()){
                     if(p.isDur())prdc=prdc+"着";
                     else {
@@ -91,14 +91,21 @@ public class sentence {
                 break;
             case 1:
                 if(p.isDur()){
-                    tense="正在";
+                    if(prob.aBoolean(50))tense="正在";
+                    else tense="";
                     prdc=prdc+"着";
                 }
         }
 
         if(prob.aBoolean(40)) advb=wt.getConst("advb").getVal();
         else advb="";
-        if(prob.aBoolean(40)) { }
+
+        atbt="";
+        if(prob.aBoolean(30)) atbt=atbt+wt.getConst("atb");
+        if(prob.aBoolean(40))atbt=atbt+wt.getConst("atbt");
+
+        if(prob.aBoolean(5)) intj=wt.getConst("intj").getVal();
+        else intj="";
 
 
     }
