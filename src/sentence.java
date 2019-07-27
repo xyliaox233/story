@@ -1,5 +1,3 @@
-import java.util.Calendar;
-
 public class sentence {
     private WordTaker wt;
     private String sentence;

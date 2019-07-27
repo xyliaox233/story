@@ -88,7 +88,25 @@ public class WordTaker {
     }
 
     public String getEnv(String name){
-        String path="lib/scene/"+name+".txt";
+        String path="lib/scene/"+name+"/env.txt";
+        ArrayList<String> list=fileHandler(path);
+        return list.get(pro.anInt(list.size()));
+    }
+
+    public String getEnvEvent(String name,int num){
+        String path="lib/scene/"+name+"/"+num+".txt";
+        ArrayList<String> list=fileHandler(path);
+        return list.get(pro.anInt(list.size()));
+    }
+
+    public String getChara(String name){
+        String path="lib/scene/"+name+"/chara.txt";
+        ArrayList<String> list=fileHandler(path);
+        return list.get(pro.anInt(list.size()));
+    }
+
+    public String getCharaEvent(String chara){
+        String path="lib/character/"+chara+".txt";
         ArrayList<String> list=fileHandler(path);
         return list.get(pro.anInt(list.size()));
     }
