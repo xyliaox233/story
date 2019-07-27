@@ -98,7 +98,7 @@ public class sentence {
 
         if(prob.aBoolean(40)) advb=wt.getConst("advb").getVal();
         else advb="";
-        if(prob.aBoolean(40)) {}
+        if(prob.aBoolean(40)) { }
 
 
     }
