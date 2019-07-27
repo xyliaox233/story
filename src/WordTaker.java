@@ -3,11 +3,19 @@ import java.util.*;
 
 public class WordTaker {
     public sentence_const getConst(String mode){
-        ArrayList<String> list =new ArrayList<>();
+        ArrayList<String>list=new ArrayList<>();
+        ArrayList<String>LIST=new ArrayList<>();
         probability pro=new probability();
         sentence_const res=null;
         prdc rs=null;
+        atb rt=null;
         switch (mode){
+            case "atb":
+                res=new atb();
+                rt=(atb) res;
+                list=fileHandler("lib/word/num.txt");
+                LIST=fileHandler("lib/word/mea.txt");
+                break;
             case "obj":
                 list=fileHandler("lib/word/n.txt");
                 res=new obj();
@@ -66,6 +74,13 @@ public class WordTaker {
         if(mode.equals("prdc")){
             rs.setVal(val);
             return rs;
+        }
+        else if(mode.equals("atb")){
+            int SIZE=LIST.size();
+            rt.setNum(list.get(pro.anInt(size)));
+            rt.setMea(LIST.get(pro.anInt(SIZE)));
+            rt.setVal(rt.getNum()+rt.getMea());
+            return rt;
         }
         res.setVal(val);
         return res;
