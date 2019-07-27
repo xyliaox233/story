@@ -2,10 +2,11 @@ import java.io.*;
 import java.util.*;
 
 public class WordTaker {
+    private probability pro=new probability();
+
     public sentence_const getConst(String mode){
         ArrayList<String>list=new ArrayList<>();
         ArrayList<String>LIST=new ArrayList<>();
-        probability pro=new probability();
         sentence_const res=null;
         prdc rs=null;
         atb rt=null;
@@ -84,6 +85,12 @@ public class WordTaker {
         }
         res.setVal(val);
         return res;
+    }
+
+    public String getEnv(String name){
+        String path="lib/scene/"+name+".txt";
+        ArrayList<String> list=fileHandler(path);
+        return list.get(pro.anInt(list.size()));
     }
 
     private ArrayList<String> fileHandler(String path){
