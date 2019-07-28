@@ -1,3 +1,6 @@
+import com.sun.jndi.ldap.Ber;
+
+import java.awt.*;
 import java.util.List;
 
 public class sentence {
@@ -72,6 +75,7 @@ public class sentence {
         return rt;
     }
     private String choose(int mode){
+        String rt="";
         switch (mode){
             case 1:
                 return SimpleSentence();
@@ -80,24 +84,33 @@ public class sentence {
             case 3:
                 return Special();
             case 4:
-                int mode_Common=prob.anInt(6);
-                switch (mode_Common){
-                    case 0:
-                        return Declarative();
-                    case 1:
-                        return Question();
-                    case 2:
-                        return Exclamatory();
-                    case 3:
-                        return Ask_Back();
-                    case 4:
-                        return Ba();
-                    case 5:
-                        return Bei();
-                }
-            default:
-                return null;
+                int probability=prob.anInt(100);
+                int from,to=0;
+
+                to=to+60;
+                if(probability<to)rt=Declarative();
+
+                from=to;to=to+5;
+                if(from<=probability&&probability<to)rt=Exclamatory();
+
+                from=to;to=to+5;
+                if (from<=probability&&probability<to)rt=Question();
+
+                from=to;to=to+3;
+                if(from<=probability&&probability<to)rt=Ask_Back();
+
+                from=to;to=to+7;
+                if(from<=probability&&probability<to)rt= Compare();
+
+                from=to;to=to+10;
+                if (from<=probability&&probability<to)rt=Ba();
+
+                from=to;to=to+10;
+                if(from<=probability&&probability<to)rt= Bei();
+
+                return rt;
         }
+        return null;
     }
     private void getWords(){
         sub=wt.getConst("sub").getVal();
@@ -248,6 +261,28 @@ public class sentence {
                 break;
             case 3:
                 rt=ATB_SUB+ATBT_SUB+SUB+tense+"不是没"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"吗？";
+                break;
+        }
+        return rt;
+    }
+    private String Compare(){
+        String rt="";
+        int mode=prob.anInt(5);
+        switch (mode){
+            case 0:
+                rt=ATB_SUB+SUB+"比"+ATBT_OBJ+OBJ+delete_de(wt.getConst("atbt").getVal());
+                break;
+            case 1:
+                rt=ATB_SUB+SUB+"不比"+ATBT_OBJ+OBJ+delete_de(wt.getConst("atbt").getVal());
+                break;
+            case 2:
+                rt=ATB_SUB+SUB+"就像"+ATBT_OBJ+OBJ+"一样"+delete_de(wt.getConst("atbt").getVal());
+                break;
+            case 3:
+                rt=ATB_SUB+SUB+"还不如"+ATBT_OBJ+OBJ+delete_de(wt.getConst("atbt").getVal());
+                break;
+            case 4:
+                rt=ATB_SUB+SUB+"和"+ATBT_OBJ+OBJ+"一样"+delete_de(wt.getConst("atbt").getVal());
                 break;
         }
         return rt;
