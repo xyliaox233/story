@@ -135,7 +135,7 @@ public class sentence {
         String rt="";
         getWords();
         MessageHandler();
-        int mode=prob.anInt(5);
+        int mode=prob.anInt(8);
         switch (mode){
             case 0:
                 rt=ATB_SUB+ATBT_SUB+SUB+tense+"在哪里"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"呢？";
@@ -146,24 +146,80 @@ public class sentence {
             case 2:
                 rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+"什么呢？";
                 break;
-            case
+            case 3:
+                rt=ATB_SUB+ATBT_SUB+SUB+tense+"是怎么"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"的？";
+                break;
+            case 4:
+                rt="为什么"+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"？";
+                break;
+            case 5:
+                rt=ATB_SUB+ATBT_SUB+SUB+"什么时候"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"呢？";
+                break;
+            case 6:
+                rt="多少"+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"？";
+                break;
+            case 7:
+                rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+"多少"+ATBT_OBJ+OBJ+"？";
+                break;
         }
         return rt;
     }
     private String Exclamatory(){
         String rt="";
+        String[] strings2={"。","！","！！","！！！"};
+        switch (prob.anInt(3)){
+            case 0:
+                if(prob.aBoolean(50)) {
+                    if(prob.aBoolean(50))rt=rt+"这";
+                    rt=rt+OBJ+"太"+ATBT_OBJ+"了";
+                }
+                else {
+                    String[] strings1={"真","好"};
+                    if(prob.aBoolean(50)){
+                        rt=rt+"这";
+                        if(prob.aBoolean(50))rt=rt+ATB_OBJ;
+                    }
+                    rt=rt+ATBT_OBJ+OBJ+strings1[prob.anInt(strings1.length)]+delete_de(ATBT_SUB)+intj+strings2[prob.anInt(strings2.length)];
+                }
+                break;
+            case 1:
+                rt=SUB+intj+strings2[prob.anInt(strings2.length)];
+                break;
+            case 2:
+                rt=intj+strings2[prob.anInt(strings2.length)];
+                break;
+        }
         return rt;
     }
     private String Ask_Back(){
         String rt="";
+        int mode=prob.anInt(2);
+        switch (mode){
+            case 0:
+                rt=ATB_SUB+ATBT_SUB+SUB+"难道"+tense+"不"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"吗？";
+                break;
+            case 1:
+                rt=ATB_SUB+ATBT_SUB+SUB+"难道"+tense+"没有"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"吗？";
+                break;
+            case 2:
+                rt=ATB_SUB+ATBT_SUB+SUB+"怎么就"+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"了？";
+                break;
+            case 3:
+                rt=ATB_SUB+ATBT_SUB+SUB+tense+"不是没"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"吗？";
+                break;
+        }
         return rt;
     }
     private String Ba(){
-        String rt="";
+        String rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+"把"+ATB_OBJ+ATBT_OBJ+OBJ+prdc+"。";
         return rt;
     }
     private String Bei(){
-        String rt="";
+        String rt=ATB_SUB+ATBT_SUB+SUB+tense+"被"+ATB_OBJ+ATBT_OBJ+OBJ+advb+prdc+"。";
         return rt;
+    }
+    private String delete_de(String str){
+        int length=str.length();
+        return str.substring(0,length-2);
     }
 }

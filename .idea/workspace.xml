@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f4cb4d4c-4224-40ae-aeab-447577078082" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordTaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordTaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentence.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-221">
+            <state relative-caret-position="209">
               <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -42,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="145" column="17" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
+            <state relative-caret-position="520">
+              <caret line="222" column="41" lean-forward="true" selection-start-line="222" selection-start-column="41" selection-end-line="222" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -182,7 +181,7 @@
       <updated>1564069977499</updated>
       <workItem from="1564069980555" duration="1182000" />
       <workItem from="1564142159858" duration="9477000" />
-      <workItem from="1564292117292" duration="2600000" />
+      <workItem from="1564292117292" duration="4190000" />
     </task>
     <task id="LOCAL-00001" summary="!">
       <created>1564144910823</created>
@@ -212,11 +211,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564222910225</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="!">
+      <created>1564294813588</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564294813588</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13384000" />
+    <option name="totallyTimeSpent" value="14974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="879" height="830" extended-state="0" />
@@ -231,7 +237,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -290,16 +296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/atbt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -307,10 +303,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sentence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="145" column="17" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="17" />
+        <state relative-caret-position="520">
+          <caret line="222" column="41" lean-forward="true" selection-start-line="222" selection-start-column="41" selection-end-line="222" selection-end-column="41" />
         </state>
       </provider>
     </entry>
