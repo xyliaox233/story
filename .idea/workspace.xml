@@ -41,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="62" column="48" lean-forward="true" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+            <state relative-caret-position="627">
+              <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
             </state>
           </provider>
         </entry>
@@ -181,7 +181,7 @@
       <updated>1564069977499</updated>
       <workItem from="1564069980555" duration="1182000" />
       <workItem from="1564142159858" duration="9477000" />
-      <workItem from="1564292117292" duration="8102000" />
+      <workItem from="1564292117292" duration="8499000" />
     </task>
     <task id="LOCAL-00001" summary="!">
       <created>1564144910823</created>
@@ -225,11 +225,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564296322094</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="!">
+      <created>1564300234431</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1564300234431</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18886000" />
+    <option name="totallyTimeSpent" value="19283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="879" height="830" extended-state="0" />
@@ -322,8 +329,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sentence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="62" column="48" lean-forward="true" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+        <state relative-caret-position="627">
+          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
         </state>
       </provider>
     </entry>

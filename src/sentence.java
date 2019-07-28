@@ -57,7 +57,7 @@ public class sentence {
                 rt=former2[mode]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"£¬";
                 getWords();
                 MessageHandler();
-                rt=rt+ATB_SUB+ATBT_SUB+SUB+tense+latter2[mode]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"¡£";
+                rt=rt+ATB_SUB+ATBT_SUB+SUB+latter2[mode]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"¡£";
                 break;
             case 2:
                 mode=prob.anInt(former3.length);
@@ -138,15 +138,15 @@ public class sentence {
                 }
         }
 
+        advb="";
         if(prob.aBoolean(40)) advb=wt.getConst("advb").getVal();
-        else advb="";
 
         atb_sub="";
         if(prob.aBoolean(30)) atb_sub=wt.getConst("atb").getVal();
         atbt_sub="";
         if(prob.aBoolean(40))atbt_sub=atbt_sub+wt.getConst("atbt").getVal();
         atb_obj="";
-        if(prob.aBoolean(30)) atbt_obj=wt.getConst("atb").getVal();
+        if(prob.aBoolean(30)) atb_obj=wt.getConst("atb").getVal();
         atbt_obj="";
         if(prob.aBoolean(40))atbt_obj=wt.getConst("atbt").getVal();
         atbt_sub_charactor="";
@@ -154,8 +154,8 @@ public class sentence {
         atbt_obj_charactor="";
         if(prob.aBoolean(40)) atbt_obj_charactor=wt.getConst("atbt").getVal();
 
+        intj="";
         if(prob.aBoolean(5)) intj=wt.getConst("intj").getVal();
-        else intj="";
     }
 
     private void MessageHandler(){
