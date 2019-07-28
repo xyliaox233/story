@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class sentence {
     private WordTaker wt;
     private String sentence;
@@ -31,6 +33,42 @@ public class sentence {
     }
     private String CompositeSentence(){
         String rt="";
+        int mode=0;
+        String[] former1={"一边","不但","因为","虽然","不管"};
+        String[] latter1={"一边","而且","所以","但是","都"};
+        String[] former2={"一旦","尽管","不论","如果"};
+        String[] latter2={"就","都","都","就"};
+        String[] former3={"因为","之所以"};
+        String[] latter3={"所以","是因为"};
+        switch (prob.anInt(3)){
+            case 0:
+                mode=prob.anInt(former1.length);
+                getWords();
+                MessageHandler();
+                rt=ATB_SUB+ATBT_SUB+SUB+tense+former1[mode]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"，";
+                getWords();
+                MessageHandler();
+                rt=rt+latter1[mode]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
+                break;
+            case 1:
+                mode=prob.anInt(former2.length);
+                getWords();
+                MessageHandler();
+                rt=former2[mode]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"，";
+                getWords();
+                MessageHandler();
+                rt=rt+ATB_SUB+ATBT_SUB+SUB+latter2[mode]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
+                break;
+            case 2:
+                mode=prob.anInt(former3.length);
+                getWords();
+                MessageHandler();
+                rt=former3[mode]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"，";
+                getWords();
+                MessageHandler();
+                rt=rt+latter3[mode]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
+                break;
+        }
         return rt;
     }
     private String choose(int mode){
@@ -100,15 +138,15 @@ public class sentence {
                 }
         }
 
+        advb="";
         if(prob.aBoolean(40)) advb=wt.getConst("advb").getVal();
-        else advb="";
 
         atb_sub="";
         if(prob.aBoolean(30)) atb_sub=wt.getConst("atb").getVal();
         atbt_sub="";
         if(prob.aBoolean(40))atbt_sub=atbt_sub+wt.getConst("atbt").getVal();
         atb_obj="";
-        if(prob.aBoolean(30)) atbt_obj=wt.getConst("atb").getVal();
+        if(prob.aBoolean(30)) atb_obj=wt.getConst("atb").getVal();
         atbt_obj="";
         if(prob.aBoolean(40))atbt_obj=wt.getConst("atbt").getVal();
         atbt_sub_charactor="";
@@ -116,8 +154,8 @@ public class sentence {
         atbt_obj_charactor="";
         if(prob.aBoolean(40)) atbt_obj_charactor=wt.getConst("atbt").getVal();
 
+        intj="";
         if(prob.aBoolean(5)) intj=wt.getConst("intj").getVal();
-        else intj="";
     }
 
     private void MessageHandler(){
@@ -165,6 +203,8 @@ public class sentence {
         return rt;
     }
     private String Exclamatory(){
+        getWords();
+        MessageHandler();
         String rt="";
         String[] strings2={"。","！","！！","！！！"};
         switch (prob.anInt(3)){
@@ -192,6 +232,8 @@ public class sentence {
         return rt;
     }
     private String Ask_Back(){
+        getWords();
+        MessageHandler();
         String rt="";
         int mode=prob.anInt(2);
         switch (mode){
@@ -211,10 +253,14 @@ public class sentence {
         return rt;
     }
     private String Ba(){
+        getWords();
+        MessageHandler();
         String rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+"把"+ATB_OBJ+ATBT_OBJ+OBJ+prdc+"。";
         return rt;
     }
     private String Bei(){
+        getWords();
+        MessageHandler();
         String rt=ATB_SUB+ATBT_SUB+SUB+tense+"被"+ATB_OBJ+ATBT_OBJ+OBJ+advb+prdc+"。";
         return rt;
     }
