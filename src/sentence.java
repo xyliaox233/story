@@ -1,8 +1,3 @@
-import com.sun.jndi.ldap.Ber;
-
-import java.awt.*;
-import java.util.List;
-
 public class sentence {
     private WordTaker wt;
     private String sentence;
@@ -224,7 +219,7 @@ public class sentence {
             case 0:
                 if(prob.aBoolean(50)) {
                     if(prob.aBoolean(50))rt=rt+"这";
-                    rt=rt+OBJ+"太"+ATBT_OBJ+"了";
+                    rt=rt+OBJ+"太"+delete_de(ATBT_OBJ)+"了";
                 }
                 else {
                     String[] strings1={"真","好"};
