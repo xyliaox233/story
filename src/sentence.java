@@ -2,8 +2,8 @@ public class sentence {
     private WordTaker wt;
     private String sentence;
     private probability prob;
-    private String charactor_sub,charactor_obj,sub,prdc,obj,tense,advb,atbt_sub,atbt_sub_charactor,atbt_obj,atbt_obj_charactor,intj="";//random
-    private String SUB,OBJ,ATBT_SUB,ATBT_OBJ="";//final-decided by message
+    private String charactor_sub,charactor_obj,sub,prdc,obj,tense,advb,atb_sub,atbt_sub,atbt_sub_charactor,atb_obj,atbt_obj,atbt_obj_charactor,intj="";//random
+    private String SUB,OBJ,ATBT_SUB,ATBT_OBJ,ATB_SUB,ATB_OBJ="";//final-decided by message
     private String message;
 
     public String makeSentence(String message){
@@ -103,16 +103,18 @@ public class sentence {
         if(prob.aBoolean(40)) advb=wt.getConst("advb").getVal();
         else advb="";
 
+        atb_sub="";
+        if(prob.aBoolean(30)) atb_sub=wt.getConst("atb").getVal();
         atbt_sub="";
-        if(prob.aBoolean(30)) atbt_sub=atbt_sub+wt.getConst("atb");
-        if(prob.aBoolean(40))atbt_sub=atbt_sub+wt.getConst("atbt");
+        if(prob.aBoolean(40))atbt_sub=atbt_sub+wt.getConst("atbt").getVal();
+        atb_obj="";
+        if(prob.aBoolean(30)) atbt_obj=wt.getConst("atb").getVal();
         atbt_obj="";
-        if(prob.aBoolean(30)) atbt_obj=atbt_obj+wt.getConst("atb");
-        if(prob.aBoolean(40))atbt_obj=atbt_obj+wt.getConst("atbt");
+        if(prob.aBoolean(40))atbt_obj=wt.getConst("atbt").getVal();
         atbt_sub_charactor="";
-        if(prob.aBoolean(40)) atbt_sub_charactor=atbt_sub_charactor+wt.getConst("atbt");
+        if(prob.aBoolean(40)) atbt_sub_charactor=wt.getConst("atbt").getVal();
         atbt_obj_charactor="";
-        if(prob.aBoolean(40)) atbt_obj_charactor=atbt_obj_charactor+wt.getConst("atbt");
+        if(prob.aBoolean(40)) atbt_obj_charactor=wt.getConst("atbt").getVal();
 
         if(prob.aBoolean(5)) intj=wt.getConst("intj").getVal();
         else intj="";
@@ -126,11 +128,26 @@ public class sentence {
         String rt="";
         getWords();
         MessageHandler();
-        rt=ATBT_SUB+SUB+tense+advb+prdc+ATBT_OBJ+OBJ+intj+"。";
+        rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
         return rt;
     }
     private String Question(){
         String rt="";
+        getWords();
+        MessageHandler();
+        int mode=prob.anInt(5);
+        switch (mode){
+            case 0:
+                rt=ATB_SUB+ATBT_SUB+SUB+tense+"在哪里"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"呢？";
+                break;
+            case 1:
+                rt="是什么"+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"呢？";
+                break;
+            case 2:
+                rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+"什么呢？";
+                break;
+            case
+        }
         return rt;
     }
     private String Exclamatory(){

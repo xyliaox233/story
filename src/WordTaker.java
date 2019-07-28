@@ -10,6 +10,7 @@ public class WordTaker {
         sentence_const res=null;
         prdc rs=null;
         atb rt=null;
+
         switch (mode){
             case "atb":
                 res=new atb();
