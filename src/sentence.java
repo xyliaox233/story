@@ -1,8 +1,8 @@
 public class sentence {
-    private WordTaker wt;
-    private WordReplacer wr;
+    private WordTaker wt=new WordTaker();
+    private WordReplacer wr=new WordReplacer();
+    private probability prob=new probability();
     private String sentence;
-    private probability prob;
     private String charactor_sub,charactor_obj,sub,prdc,obj,tense,advb,atb_sub,atbt_sub,atbt_sub_charactor,atb_obj,atbt_obj,atbt_obj_charactor,intj="";//random
     private String SUB,OBJ,ATBT_SUB,ATBT_OBJ,ATB_SUB,ATB_OBJ="";//final-decided by message
     private String message;
