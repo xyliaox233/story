@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class WordReplacer {
-    private WordTaker wt;
-    private probability pro;
-    private sentence stc;
+    private WordTaker wt=new WordTaker();
+    private probability pro=new probability();
+    private sentence stc=new sentence();
     private String[] constnames={"(advb)","(atb)","(atbt)","(intj)","(sub)","(obj)","(prdc)","(say)","(env)","(x)"};
 
     public void replaceAll(String str, ArrayList<String> chara,String env){
