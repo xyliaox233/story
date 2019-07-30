@@ -1,5 +1,6 @@
 public class sentence {
     private WordTaker wt;
+    private WordReplacer wr;
     private String sentence;
     private probability prob;
     private String charactor_sub,charactor_obj,sub,prdc,obj,tense,advb,atb_sub,atbt_sub,atbt_sub_charactor,atb_obj,atbt_obj,atbt_obj_charactor,intj="";//random
@@ -26,7 +27,8 @@ public class sentence {
 
     }
     private String Special(){
-        String rt="";
+        String rt=wt.getSps();
+        wr.replaceAll(rt,null,null);
         return rt;
     }
     private String CompositeSentence(){

@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="561abc8b-2d50-42e5-b472-654de4dca9b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/WordReplacer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/scene/废弃铁轨/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scene/废弃铁轨/2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sp sentence/Declarative.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sp sentence/Exclamatory.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sp sentence/Question.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordTaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordTaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentence.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="893">
+              <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,20 +35,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/atbt.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-end-line="1" />
+            <state relative-caret-position="494">
+              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5035">
-              <caret line="265" column="25" selection-start-line="265" selection-start-column="25" selection-end-line="265" selection-end-column="25" />
+            <state relative-caret-position="456">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -79,22 +85,16 @@
         <option value="$PROJECT_DIR$/src/intj.java" />
         <option value="$PROJECT_DIR$/src/sentence_const.java" />
         <option value="$PROJECT_DIR$/src/prdc.java" />
-        <option value="$PROJECT_DIR$/src/WordTaker.java" />
         <option value="$PROJECT_DIR$/src/atbt.java" />
+        <option value="$PROJECT_DIR$/src/WordTaker.java" />
         <option value="$PROJECT_DIR$/src/sentence.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+        <option value="$PROJECT_DIR$/src/WordReplacer.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="335" />
-    <option name="y" value="46" />
+    <option name="x" value="412" />
+    <option name="y" value="-14" />
     <option name="width" value="1100" />
     <option name="height" value="1040" />
   </component>
@@ -111,6 +111,11 @@
             <path>
               <item name="story" type="b2602c69:ProjectViewProjectNode" />
               <item name="story" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="story" type="b2602c69:ProjectViewProjectNode" />
@@ -179,7 +184,7 @@
       <workItem from="1564292117292" duration="8499000" />
       <workItem from="1564303519587" duration="25000" />
       <workItem from="1564303642104" duration="224000" />
-      <workItem from="1564488451273" duration="471000" />
+      <workItem from="1564488451273" duration="6716000" />
     </task>
     <task id="LOCAL-00001" summary="!">
       <created>1564144910823</created>
@@ -237,11 +242,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564303834943</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Merge branch 'master' of https://github.com/xyliaox233/story&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1564488931191</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564488931191</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20183000" />
+    <option name="totallyTimeSpent" value="26428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -307,18 +319,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="893">
+          <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/atbt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -331,8 +336,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sentence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5035">
-          <caret line="265" column="25" selection-start-line="265" selection-start-column="25" selection-end-line="265" selection-end-column="25" />
+        <state relative-caret-position="456">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/atbt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
         </state>
       </provider>
     </entry>

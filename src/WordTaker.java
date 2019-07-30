@@ -88,6 +88,12 @@ public class WordTaker {
         return res;
     }
 
+    public String getSps(){
+        String path="lib/special/sentence.txt";
+        ArrayList<String> list=fileHandler(path);
+        return list.get(pro.anInt(list.size()));
+    }
+
     public String getEnv(String name){
         String path="lib/scene/"+name+"/env.txt";
         ArrayList<String> list=fileHandler(path);
