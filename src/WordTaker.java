@@ -94,6 +94,14 @@ public class WordTaker {
         return list.get(pro.anInt(list.size()));
     }
 
+    public String getEnv_name(boolean daily){
+        String path;
+        if(daily) path="lib/scene/daily scene.txt";
+        else path="lib/scene/non daily scene.txt";
+        ArrayList<String> list=fileHandler(path);
+        return list.get(pro.anInt(list.size()));
+    }
+
     public String getEnv(String name){
         String path="lib/scene/"+name+"/env.txt";
         ArrayList<String> list=fileHandler(path);
