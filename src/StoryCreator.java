@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class StoryCreator {
     private WordTaker wt=new WordTaker();
-    private ArrayList<String> story=null;
+    private ArrayList<String> story=new ArrayList<>();
     private sentence sentence=new sentence();
     private probability prob=new probability();
     private boolean has_charactor=false;
