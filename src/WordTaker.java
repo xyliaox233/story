@@ -118,7 +118,7 @@ public class WordTaker {
         return list.get(pro.anInt(list.size()));
     }
 
-    private ArrayList<String> fileHandler(String path){
+    public ArrayList<String> fileHandler(String path){
         ArrayList<String> list=new ArrayList<>();
         try {
             File file = new File(path);
@@ -133,11 +133,4 @@ public class WordTaker {
         }
         return list;
     }
-/*
-    public static void main(String[] args) {
-        WordTaker wt=new WordTaker();
-        sentence_const sc=wt.getConst("prdc");
-        System.out.println(sc.getVal());
-    }
- */
 }
