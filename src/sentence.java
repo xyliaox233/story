@@ -262,6 +262,8 @@ public class sentence {
     }
     private String Compare(){
         String rt="";
+        getWords();
+        MessageHandler();
         int mode=prob.anInt(5);
         switch (mode){
             case 0:
