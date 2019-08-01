@@ -1,24 +1,26 @@
+import java.util.ArrayList;
+
 public class sentence {
     private WordTaker wt=new WordTaker();
     private WordReplacer wr=new WordReplacer();
     private probability prob=new probability();
-    private String sentence;
-    private String charactor_sub,charactor_obj,sub,prdc,obj,tense,advb,atb_sub,atbt_sub,atbt_sub_charactor,atb_obj,atbt_obj,atbt_obj_charactor,intj="";//random
-    private String SUB,OBJ,ATBT_SUB,ATBT_OBJ,ATB_SUB,ATB_OBJ="";//final-decided by message
+    private String sub="",prdc="",obj="",tense="",advb="",atb_sub="",atbt_sub="",atb_obj="",atbt_obj="",intj="";//random
+    private String SUB,OBJ="",ATBT_SUB="",ATBT_OBJ="",ATB_SUB="",ATB_OBJ="";//final-decided by message
     private String message;
+    private int mode;
+    //1-单句 2-复句 3-特殊句 4-普通句 5-陈述句 6-疑问句 7-感叹句 8-反问句 9-比较句 10-把 11-被 12-环境事件 13-角色事件
+    ArrayList<String[]> save=new ArrayList<>();
 
     public String makeSentence(String message){
         this.message=message;
-        int mode;
         // 1:单句     2：复句
         if(prob.aBoolean(70)){
             mode=1;
         }else mode=2;
 
-        return sentence=choose(mode);
+        return choose(mode);
     }
     private String SimpleSentence(){
-        int mode;
         // 3：特殊句    4：普通句
         if(prob.aBoolean(20)){
             mode=3;
@@ -28,7 +30,7 @@ public class sentence {
     }
     private String Special(){
         String rt=wt.getSps();
-        wr.replaceAll(rt,null,null);
+        rt=wr.replaceAll(rt,null,null);
         return rt;
     }
     private String CompositeSentence(){
@@ -159,27 +161,50 @@ public class sentence {
         if(prob.aBoolean(30)) atb_obj=wt.getConst("atb").getVal();
         atbt_obj="";
         if(prob.aBoolean(40))atbt_obj=wt.getConst("atbt").getVal();
-        atbt_sub_charactor="";
-        if(prob.aBoolean(40)) atbt_sub_charactor=wt.getConst("atbt").getVal();
-        atbt_obj_charactor="";
-        if(prob.aBoolean(40)) atbt_obj_charactor=wt.getConst("atbt").getVal();
 
         intj="";
         if(prob.aBoolean(5)) intj=wt.getConst("intj").getVal();
     }
 
     private void MessageHandler(){
+        SUB=sub;OBJ=obj;ATBT_OBJ=atbt_obj;ATBT_SUB=atbt_sub;ATB_OBJ=atb_obj;ATB_SUB=atb_sub;
+        String isChara_sub="", isChara_obj="";
 
+        if(OBJ.equals("")){
+            ATB_OBJ="";ATBT_OBJ="";
+        }
+        if(!message.equals("default")){
+            String[] strings=message.split(":");
+            switch (strings[0]){
+                case "sub":
+                    SUB=strings[1];
+                    if(strings[2].equals("chara")){
+                        ATB_SUB="";
+                        isChara_sub="chara";
+                    }
+                    break;
+                case "obj":
+                    OBJ=strings[1];
+                    if(strings[2].equals("chara")){
+                        ATB_OBJ="";
+                        isChara_obj="chara";
+                    }
+                    break;
+            }
+        }
+
+        String[] sub_obj={SUB,isChara_sub,OBJ,isChara_obj};
+        save.add(0,sub_obj);
     }
 
     private String Declarative(){
-        String rt="";
+        mode=5;
         getWords();
         MessageHandler();
-        rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
-        return rt;
+        return ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
     }
     private String Question(){
+        mode=6;
         String rt="";
         getWords();
         MessageHandler();
@@ -213,6 +238,7 @@ public class sentence {
         return rt;
     }
     private String Exclamatory(){
+        mode=7;
         getWords();
         MessageHandler();
         String rt="";
@@ -242,6 +268,7 @@ public class sentence {
         return rt;
     }
     private String Ask_Back(){
+        mode=8;
         getWords();
         MessageHandler();
         String rt="";
@@ -263,6 +290,7 @@ public class sentence {
         return rt;
     }
     private String Compare(){
+        mode=9;
         String rt="";
         getWords();
         MessageHandler();
@@ -287,19 +315,45 @@ public class sentence {
         return rt;
     }
     private String Ba(){
+        mode=10;
         getWords();
         MessageHandler();
         String rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+"把"+ATB_OBJ+ATBT_OBJ+OBJ+prdc+"。";
         return rt;
     }
     private String Bei(){
+        mode=11;
         getWords();
         MessageHandler();
         String rt=ATB_SUB+ATBT_SUB+SUB+tense+"被"+ATB_OBJ+ATBT_OBJ+OBJ+advb+prdc+"。";
         return rt;
     }
+
+    public String makeEnvSentence(String env,ArrayList<String> chara){
+        mode=12;
+        String string=wt.getEnvEvent(env,chara.size());
+        return wr.replaceAll(string,chara,env);
+    }
+    public String makeCharaSentence(String chara){
+        mode=13;
+        String string=wt.getCharaEvent(chara);
+        return wr.replaceAll(string,null,null);
+    }
+
     private String delete_de(String str){
         int length=str.length();
         return str.substring(0,length-2);
+    }
+
+    public String getSUB() {
+        return SUB;
+    }
+
+    public String getOBJ() {
+        return OBJ;
+    }
+
+    public int getMode() {
+        return mode;
     }
 }
