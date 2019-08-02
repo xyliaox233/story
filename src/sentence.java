@@ -184,7 +184,7 @@ public class sentence {
                     }
                     break;
                 case "obj":
-                    OBJ=strings[1];
+                    if(!OBJ.equals(""))OBJ=strings[1];
                     if(strings[2].equals("chara")){
                         ATB_OBJ="";
                         isChara_obj="chara";

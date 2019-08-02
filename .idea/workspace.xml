@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="561abc8b-2d50-42e5-b472-654de4dca9b5" name="Default Changelist" comment="">
+    <list default="true" id="561abc8b-2d50-42e5-b472-654de4dca9b5" name="Default Changelist" comment="!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StoryCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoryCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordReplacer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordReplacer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentence.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,24 +18,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StoryCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="50" column="95" lean-forward="true" selection-start-line="50" selection-start-column="95" selection-end-line="50" selection-end-column="95" />
+            <state relative-caret-position="266">
+              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="90" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
+            <state relative-caret-position="1644">
+              <caret line="186" column="54" lean-forward="true" selection-start-line="186" selection-start-column="54" selection-end-line="186" selection-end-column="54" />
               <folding>
-                <element signature="e#11589#11590#0" expanded="true" />
-                <element signature="e#11645#11646#0" expanded="true" />
-                <element signature="e#11700#11701#0" expanded="true" />
+                <element signature="e#11578#11579#0" expanded="true" />
+                <element signature="e#11604#11605#0" expanded="true" />
+                <element signature="e#11634#11635#0" expanded="true" />
+                <element signature="e#11660#11661#0" expanded="true" />
+                <element signature="e#11688#11689#0" expanded="true" />
+                <element signature="e#11715#11716#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            <state relative-caret-position="114">
+              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -54,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="122" column="39" lean-forward="true" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
+            <state relative-caret-position="2299">
+              <caret line="122" column="39" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -88,8 +90,8 @@
         <option value="$PROJECT_DIR$/src/StoryCreater.java" />
         <option value="$PROJECT_DIR$/src/WordTaker.java" />
         <option value="$PROJECT_DIR$/src/WordReplacer.java" />
-        <option value="$PROJECT_DIR$/src/StoryCreator.java" />
         <option value="$PROJECT_DIR$/src/sentence.java" />
+        <option value="$PROJECT_DIR$/src/StoryCreator.java" />
       </list>
     </option>
   </component>
@@ -104,8 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,6 +139,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,7 +164,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WordTaker">
+  <component name="RunManager" selected="Application.StoryCreator">
+    <configuration name="StoryCreator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StoryCreator" />
+      <module name="story" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WordTaker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WordTaker" />
       <module name="story" />
@@ -179,6 +188,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StoryCreator" />
         <item itemvalue="Application.WordTaker" />
         <item itemvalue="Application.sentence" />
       </list>
@@ -289,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564501978509</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="!">
+      <created>1564673589538</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1564673589538</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -299,7 +316,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14142092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14343163" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -382,34 +399,37 @@
     <entry file="file://$PROJECT_DIR$/src/StoryCreater.java" />
     <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        <state relative-caret-position="114">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="122" column="39" lean-forward="true" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StoryCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="50" column="95" lean-forward="true" selection-start-line="50" selection-start-column="95" selection-end-line="50" selection-end-column="95" />
+        <state relative-caret-position="2299">
+          <caret line="122" column="39" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sentence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="90" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
+        <state relative-caret-position="1644">
+          <caret line="186" column="54" lean-forward="true" selection-start-line="186" selection-start-column="54" selection-end-line="186" selection-end-column="54" />
           <folding>
-            <element signature="e#11589#11590#0" expanded="true" />
-            <element signature="e#11645#11646#0" expanded="true" />
-            <element signature="e#11700#11701#0" expanded="true" />
+            <element signature="e#11578#11579#0" expanded="true" />
+            <element signature="e#11604#11605#0" expanded="true" />
+            <element signature="e#11634#11635#0" expanded="true" />
+            <element signature="e#11660#11661#0" expanded="true" />
+            <element signature="e#11688#11689#0" expanded="true" />
+            <element signature="e#11715#11716#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StoryCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
         </state>
       </provider>
     </entry>
