@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="561abc8b-2d50-42e5-b472-654de4dca9b5" name="Default Changelist" comment="" />
+    <list default="true" id="561abc8b-2d50-42e5-b472-654de4dca9b5" name="Default Changelist" comment="!">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/special/sentence.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/special/sentence.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/word/int.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoryCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoryCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordReplacer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordReplacer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordTaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordTaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/probability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/probability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentence.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+            <state relative-caret-position="-228">
+              <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -26,8 +35,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1805">
-              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+            <state relative-caret-position="95">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+              <folding>
+                <element signature="e#12027#12028#0" expanded="true" />
+                <element signature="e#12083#12084#0" expanded="true" />
+                <element signature="e#12138#12139#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/probability.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="190">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -44,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1130">
-              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="314">
+              <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StoryCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+            <state relative-caret-position="247">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -72,6 +86,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -86,18 +101,19 @@
         <option value="$PROJECT_DIR$/src/sentence_const.java" />
         <option value="$PROJECT_DIR$/src/prdc.java" />
         <option value="$PROJECT_DIR$/src/atbt.java" />
+        <option value="$PROJECT_DIR$/src/StoryCreater.java" />
+        <option value="$PROJECT_DIR$/src/probability.java" />
+        <option value="$PROJECT_DIR$/src/WordTaker.java" />
         <option value="$PROJECT_DIR$/src/WordReplacer.java" />
         <option value="$PROJECT_DIR$/src/sentence.java" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/WordTaker.java" />
         <option value="$PROJECT_DIR$/src/StoryCreator.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="411" />
-    <option name="y" value="-15" />
-    <option name="width" value="1100" />
+    <option name="x" value="477" />
+    <option name="y" value="15" />
+    <option name="width" value="1352" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
@@ -105,7 +121,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -114,10 +129,16 @@
               <item name="story" type="b2602c69:ProjectViewProjectNode" />
               <item name="story" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -125,6 +146,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../STORYYY" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -140,7 +162,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WordTaker">
+  <component name="RunManager" selected="Application.StoryCreator">
+    <configuration name="StoryCreator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StoryCreator" />
+      <module name="story" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WordTaker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WordTaker" />
       <module name="story" />
@@ -157,8 +186,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WordTaker" />
+        <item itemvalue="Application.StoryCreator" />
         <item itemvalue="Application.sentence" />
+        <item itemvalue="Application.WordTaker" />
       </list>
     </recent_temporary>
   </component>
@@ -175,9 +205,6 @@
       <workItem from="1564069980555" duration="1182000" />
       <workItem from="1564142159858" duration="9477000" />
       <workItem from="1564292117292" duration="8499000" />
-      <workItem from="1564303519587" duration="25000" />
-      <workItem from="1564303642104" duration="224000" />
-      <workItem from="1564488451273" duration="7370000" />
     </task>
     <task id="LOCAL-00001" summary="!">
       <created>1564144910823</created>
@@ -228,59 +255,38 @@
       <option name="project" value="LOCAL" />
       <updated>1564300234431</updated>
     </task>
-    <task id="LOCAL-00008" summary="Merge branch 'master' of https://github.com/xyliaox233/story&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <created>1564303834942</created>
+    <task id="LOCAL-00008" summary="!">
+      <created>1564303088309</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1564303834943</updated>
+      <updated>1564303088309</updated>
     </task>
-    <task id="LOCAL-00009" summary="Merge branch 'master' of https://github.com/xyliaox233/story&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <created>1564488931191</created>
+    <task id="LOCAL-00009" summary="!">
+      <created>1564303625110</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1564488931191</updated>
+      <updated>1564303625110</updated>
     </task>
-    <task id="LOCAL-00010" summary="Merge branch 'master' of https://github.com/xyliaox233/story&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <created>1564495315725</created>
+    <task id="LOCAL-00010" summary="!">
+      <created>1564497608681</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1564495315725</updated>
+      <updated>1564497608681</updated>
     </task>
-    <task id="LOCAL-00011" summary="Merge branch 'master' of https://github.com/xyliaox233/story&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <created>1564495667868</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1564495667868</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Merge branch 'master' of https://github.com/xyliaox233/story&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <created>1564501926470</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1564501926470</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Merge branch 'master' of https://github.com/xyliaox233/story&#10;&#10;# Conflicts:&#10;#&#9;src/StoryCreator.java">
-      <created>1564502009088</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1564502009088</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30161000" />
+    <option name="totallyTimeSpent" value="26281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13739946" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13941018" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -289,8 +295,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6388102" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39971346" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -316,20 +322,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="!" />
-    <MESSAGE value="Merge branch 'master' of https://github.com/xyliaox233/story&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <MESSAGE value="Merge branch 'master' of https://github.com/xyliaox233/story&#10;&#10;# Conflicts:&#10;#&#9;src/StoryCreator.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/xyliaox233/story&#10;&#10;# Conflicts:&#10;#&#9;src/StoryCreator.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="!" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/及物动词.txt" />
     <entry file="file://$PROJECT_DIR$/src/sentence_constituents.java" />
     <entry file="file://$PROJECT_DIR$/src/obj.java" />
-    <entry file="file://$PROJECT_DIR$/src/sub.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/advb.java" />
     <entry file="file://$PROJECT_DIR$/src/intj.java" />
     <entry file="file://$PROJECT_DIR$/src/sentence_const.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/atbt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sub.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/prdc.java">
@@ -339,51 +350,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/atbt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-end-line="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/lib/scene/non daily scene.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scene/daily scene.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sentence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1805">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StoryCreater.java" />
     <entry file="file://$PROJECT_DIR$/src/probability.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        <state relative-caret-position="190">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1130">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        <state relative-caret-position="314">
+          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sentence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#12027#12028#0" expanded="true" />
+            <element signature="e#12083#12084#0" expanded="true" />
+            <element signature="e#12138#12139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/StoryCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        <state relative-caret-position="247">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>

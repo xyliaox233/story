@@ -34,8 +34,8 @@ public class WordTaker {
                 list=fileHandler("lib/word/adv.txt");
                 res=new advb();
                 break;
-            case "int":
-                list=fileHandler("lib/word/int.txt");
+            case "intj":
+                list=fileHandler("lib/word/intj.txt");
                 res=new intj();
                 break;
             case "prdc":

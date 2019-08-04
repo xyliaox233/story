@@ -1,6 +1,6 @@
 public class probability {
     public boolean aBoolean(int prob){
-        double random=prob*Math.random();
+        double random=100*Math.random();
         if(random<prob){
             return true;
         }else return false;
