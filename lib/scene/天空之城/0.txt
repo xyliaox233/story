@@ -1,0 +1,4 @@
+(atbt)街市上，(env)在(advb)叫卖(atbt)(env)。
+(atbt)宫殿里，(atbt)(env)翩翩起舞。
+空气中漂浮着(atbt)(env)，漂亮极了。
+地上飘着(atbt)的云朵，吃起来就像是(atbt)(sub)。

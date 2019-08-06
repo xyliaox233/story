@@ -1,4 +1,4 @@
-(x1)看见(atbt)(env)很害怕，偷偷拉住了(x2)的手。
-(x1)拿起(atbt)(env)，高兴地(x2)给看。
-(x1)看到(atbt)(env)，和(x2)抱在一起，大吼道：“(intj)”。
-(x1)和(x2)一起用(atbt)(obj)打败了(atbt)(env)！
+(x)看见(atbt)(env)很害怕，偷偷拉住了(x)的手。
+(x)拿起(atbt)(env)，高兴地(x)给看。
+(x)看到(atbt)(env)，和(x)抱在一起，大吼道：“(intj)”。
+(x)和(x)一起用(atbt)(obj)打败了(atbt)(env)！

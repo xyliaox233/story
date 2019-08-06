@@ -1,7 +1,7 @@
-(x)(adv)卧倒在(adj)铁轨上。
-(x)(adv)把(adj)(env)拆了，准备拿回去卖掉。
-(x)(adv)和(adj)(env)拍了张自拍。
-(x)(adv)敲了敲(adj)(env)，说：“(say)”。
-(adj)(env)(adv)打了(x)一顿。
-(adj)(env)(adv)对(x)比了个心，说“(say)”。
-(x)(adv)在(adj)铁轨上打滚。
+(x)(advb)卧倒在(atbt)铁轨上。
+(x)(advb)把(atbt)(env)拆了，准备拿回去卖掉。
+(x)(advb)和(atbt)(env)拍了张自拍。
+(x)(advb)敲了敲(atbt)(env)，说：“(say)”。
+(atbt)(env)(advb)打了(x)一顿。
+(atbt)(env)(advb)对(x)比了个心，说“(say)”。
+(x)(advb)在(atbt)铁轨上打滚。
