@@ -418,7 +418,7 @@ public class sentence {
         String rt="";
         getWords();
         while (obj.equals("")||prdc.equals("是")) getWords();
-        String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
+        String[] strings={"然后","于是","所以","那么","可是","这样的话","其实","或许","也许","这样"};
         if(prob.aBoolean(50))rt=strings[prob.anInt(strings.length)];
         rt=rt+ATB_SUB+ATBT_SUB+SUB+tense+"被"+ATB_OBJ+ATBT_OBJ+OBJ+advb+prdc+"。";
         return rt;
