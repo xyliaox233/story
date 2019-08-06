@@ -21,7 +21,7 @@ public class sentence {
     public String makeSentence(String message){
         this.message=message;
         // 1:单句     2：复句
-        if(prob.aBoolean(90)){
+        if(prob.aBoolean(70)){
             mode=1;
         }else mode=2;
 
@@ -29,13 +29,14 @@ public class sentence {
     }
     private String SimpleSentence(){
         // 3：特殊句    4：普通句
-        if(prob.aBoolean(20)){
+        if(prob.aBoolean(10)){
             mode=3;
         }else mode=4;
         return choose(mode);
 
     }
     private String Special(){
+        getWords();
         String rt=wt.getSps();
         rt=wr.replaceAll(rt,null,null);
         return rt;
@@ -44,10 +45,10 @@ public class sentence {
         String rt="";
         switch (prob.anInt(5)){
             case 0://一边……一边……
-                getWords();MessageHandler();
+                getWords();
                 if(prdc.contains("过")||prdc.contains("了"))prdc=delete_de(prdc);
                 rt=ATB_SUB+ATBT_SUB+SUB+tense+"一边"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"，";
-                getWords();MessageHandler();
+                getWords();
                 rt=rt+"一边"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
                 break;
             case 1://不但……而且……，不仅……还……
@@ -77,15 +78,15 @@ public class sentence {
             case 2://不论是否……都应该……
                 switch (prob.anInt(2)) {
                     case 0:
-                        getWords();MessageHandler();
+                        getWords();
                         rt = "不论" + ATB_SUB + ATBT_SUB +SUB+ "是否" +advb + prdc + ATB_OBJ + ATBT_OBJ + OBJ + "，";
-                        getWords();MessageHandler();
+                        getWords();
                         rt=rt+ATB_SUB+ATBT_SUB+SUB+"都应该"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
                         break;
                     case 1:
-                        getWords();MessageHandler();
+                        getWords();
                         rt=ATB_SUB + ATBT_SUB +SUB+"不论是否"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"，";
-                        getWords();MessageHandler();
+                        getWords();
                         rt=rt+"都应该"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
                         break;
                 }
@@ -96,15 +97,15 @@ public class sentence {
                 int index3=prob.anInt(former3.length);
                 switch (prob.anInt(2)){
                     case 0:
-                        getWords();MessageHandler();
+                        getWords();
                         rt=former3[index3]+ATB_SUB+ATBT_SUB+SUB+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"，";
-                        getWords();MessageHandler();
+                        getWords();
                         rt=rt+ATB_SUB+ATBT_SUB+SUB+latter3[index3]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
                         break;
                     case 1:
-                        getWords();MessageHandler();
+                        getWords();
                         rt=ATB_SUB+ATBT_SUB+SUB+former3[index3]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"，";
-                        getWords();MessageHandler();
+                        getWords();
                         rt=rt+ATB_SUB+ATBT_SUB+SUB+latter3[index3]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
                         break;
                 }
@@ -115,15 +116,15 @@ public class sentence {
                 int index4=prob.anInt(former4.length);
                 switch (prob.anInt(2)) {
                     case 0:
-                        getWords();MessageHandler();
+                        getWords();
                         rt = former4[index4] + ATB_SUB + ATBT_SUB + SUB + tense+advb + prdc + ATB_OBJ + ATBT_OBJ + OBJ + "，";
-                        getWords();MessageHandler();
+                        getWords();
                         rt=rt+latter4[index4]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
                         break;
                     case 1:
-                        getWords();MessageHandler();
+                        getWords();
                         rt=ATB_SUB + ATBT_SUB + SUB +former4[index4]+tense+advb + prdc + ATB_OBJ + ATBT_OBJ + OBJ + "，";
-                        getWords();MessageHandler();
+                        getWords();
                         rt=rt+latter4[index4]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
                 }
                 break;
@@ -236,6 +237,7 @@ public class sentence {
 
         intj="";
         if(prob.aBoolean(15)) intj=wt.getConst("intj").getVal();
+        MessageHandler();
     }
 
     private void MessageHandler(){
@@ -275,14 +277,15 @@ public class sentence {
     private String Declarative(){
         mode=5;
         getWords();
-        MessageHandler();
-        return ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
+        String rt="";
+        String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
+        rt=strings[prob.anInt(strings.length)];
+        return rt+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
     }
     private String Question(){
         mode=6;
         String rt="";
         getWords();
-        MessageHandler();
         int mode=prob.anInt(8);
         switch (mode){
             case 0:
@@ -315,7 +318,6 @@ public class sentence {
     public String Exclamatory(){
         mode=7;
         getWords();
-        MessageHandler();
         String rt="";
         String[] strings2={"。","！","！！","！！！"};
         if (prob.aBoolean(50)){
@@ -349,7 +351,6 @@ public class sentence {
         mode=8;
         getWords();
         while (obj.equals(""))getWords();
-        MessageHandler();
         String rt="";
         int mode=prob.anInt(6);
         switch (mode){
@@ -379,8 +380,8 @@ public class sentence {
         String rt="";
         getWords();
         while (obj.equals(""))getWords();
-        MessageHandler();
-
+        String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
+        if(prob.aBoolean(60))rt=strings[prob.anInt(strings.length)];
         int mode=prob.anInt(5);
         switch (mode){
             case 0:
@@ -403,30 +404,40 @@ public class sentence {
     }
     private String Ba(){
         mode=10;
+        String rt="";
         getWords();
         while (obj.equals("")||prdc.equals("是"))getWords();
-        MessageHandler();
-        String rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+"把"+ATB_OBJ+ATBT_OBJ+OBJ+prdc+"。";
+        String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
+        if(prob.aBoolean(50))rt=strings[prob.anInt(strings.length)];
+        if(prob.aBoolean(60))rt=strings[prob.anInt(strings.length)];
+        rt=rt+ATB_SUB+ATBT_SUB+SUB+tense+advb+"把"+ATB_OBJ+ATBT_OBJ+OBJ+prdc+"。";
         return rt;
     }
     private String Bei(){
         mode=11;
+        String rt="";
         getWords();
         while (obj.equals("")||prdc.equals("是")) getWords();
-        MessageHandler();
-        String rt=ATB_SUB+ATBT_SUB+SUB+tense+"被"+ATB_OBJ+ATBT_OBJ+OBJ+advb+prdc+"。";
+        String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
+        if(prob.aBoolean(50))rt=strings[prob.anInt(strings.length)];
+        rt=rt+ATB_SUB+ATBT_SUB+SUB+tense+"被"+ATB_OBJ+ATBT_OBJ+OBJ+advb+prdc+"。";
         return rt;
     }
 
     private String Sp(){
         mode=14;
+        String rt="";
+        String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
+        if(prob.aBoolean(50))rt=strings[prob.anInt(strings.length)];
         switch (prob.anInt(2)){
             case 0:
-                return ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
+                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
+                break;
             case 1:
-                return ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATBT_OBJ+"。";
+                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATBT_OBJ+"。";
+                break;
         }
-        return null;
+        return rt;
     }
 
     public String makeEnvSentence(String env,ArrayList<String> chara){

@@ -73,7 +73,7 @@ public class StoryCreator {
     private void expand(int times){
         String[] sub_or_obj={"sub:","obj:"};
         ArrayList<String> strings=new ArrayList<>();
-        for (int j = 0; j <= prob.anInt(times); j++) {
+        for (int j = 0; j <= times; j++) {
             if(sentence.getMode()==2){
                 strings.add(sentence.save.get(0)[0]+":"+sentence.save.get(0)[1]);
                 strings.add(sentence.save.get(1)[0]+":"+sentence.save.get(1)[1]);
