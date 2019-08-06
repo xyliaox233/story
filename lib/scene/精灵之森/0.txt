@@ -1,8 +1,8 @@
 天空阴沉沉的，(atbt)(env)(advb)乱飘。
-一阵(atbt)风吹过，(env)(advb)撞到了(atbt)树上。
-(env)散发着(atbt)光，(advb)颤抖着。
-远处传来(env)(atbt)歌声，闻者皆醉。
-(env)边的(env)身上挂着(atbt)“严禁烟火”的牌子。
-绿林掩映的(sub)泉边，(atbt)泉水发出“(intj)”的声音，(env)(advb)睡着。
-入夜，(atbt)星星(advb)闪烁着，(env)在月下(advb)吹着叶笛。
+一阵(atbt)风吹过，(npc)(advb)撞到了(atbt)树上。
+(npc)散发着(atbt)光，(advb)颤抖着。
+远处传来(npc)(atbt)歌声，闻者皆醉。
+(env)边的(npc)身上挂着(atbt)“严禁烟火”的牌子。
+绿林掩映的(sub)泉边，(atbt)泉水发出“(intj)”的声音，(npc)(advb)睡着。
+入夜，(atbt)星星(advb)闪烁着，(npc)在月下(advb)吹着叶笛。
 环境真好啊。

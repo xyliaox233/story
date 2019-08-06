@@ -1,7 +1,7 @@
-(x)被(atbt)(env)表白了。
-(atbt)(env)(advb)邀请(x)一起跳舞。
-(x)向(atbt)(env)买了(atb)(obj)。
-(x)和(env)一起(advb)唱了一首歌。
-(atbt)(env)(advb)偷走了(x)(atbt)(obj)。
-(atbt)(env)一直(advb)跟踪(obj)。
-(x)和(atbt)(env)一起去听了(env)的演唱会。
+(x)被(atbt)(npc)表白了。
+(atbt)(npc)(advb)邀请(x)一起跳舞。
+(x)向(atbt)(npc)买了(atb)(obj)。
+(x)和(npc)一起(advb)唱了一首歌。
+(atbt)(npc)(advb)偷走了(x)(atbt)(obj)。
+(atbt)(npcv)一直(advb)跟踪(obj)。
+(x)和(atbt)(npc)一起去听了(npc)的演唱会。

@@ -1,4 +1,6 @@
 (x)看见(atbt)(env)很害怕，偷偷拉住了(x)的手。
+(x)看见(atbt)(npc)很害怕，偷偷拉住了(x)的手。
 (x)拿起(atbt)(env)，高兴地(x)给看。
 (x)看到(atbt)(env)，和(x)抱在一起，大吼道：“(intj)”。
-(x)和(x)一起用(atbt)(obj)打败了(atbt)(env)！
+(x)看到(atbt)(npc)，和(x)抱在一起，大吼道：“(intj)”。
+(x)和(x)一起用(atbt)(obj)打败了(atbt)(npc)！

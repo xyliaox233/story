@@ -1,4 +1,6 @@
 (atbt)(env)(advb)发出了“(intj)”的声音。
+(atbt)(npc)(advb)发出了“(intj)”的声音。
 (atbt)(env)突然长出了(atb)(atbt)(obj)，(advb)飞了起来。
 东天的太阳好hot，铁轨上的(sub)(advb)den来den去。
 (atbt)(env)(advb)爆炸了。
+(atbt)(npc)(advb)爆炸了。

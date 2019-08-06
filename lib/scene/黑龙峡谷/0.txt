@@ -1,7 +1,7 @@
-(atbt)(env)(advb)进化了，引发了(atbt)天雷。
-黑龙峡谷突然地震了，原来是(env)和(env)正在打架。
-(atbt)(env)在天上(advb)飞来飞去。
-(atbt)(env)(advb)偷走了(env)的(obj)，气得它“(intj)”大叫。
-(env)(advb)在公园里吃(atbt)(obj)。
-(env)的孩子出生了，天上下起了(atbt)(obj)雨。
-一阵(atbt)风吹走了(env)(atbt)(obj)，(env)“(intj)”大笑。
+(atbt)(npc)(advb)进化了，引发了(atbt)天雷。
+黑龙峡谷突然地震了，原来是(npc)和(npc)正在打架。
+(atbt)(npc)在天上(advb)飞来飞去。
+(atbt)(npc)(advb)偷走了(npc)的(obj)，气得它“(intj)”大叫。
+(npc)(advb)在公园里吃(atbt)(env)。
+(npc)的孩子出生了，天上下起了(atbt)(env)雨。
+一阵(atbt)风吹走了(npc)(atbt)(obj)，(npc)“(intj)”大笑。

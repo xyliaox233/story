@@ -2,6 +2,7 @@
 (x)(advb)把(atbt)(env)拆了，准备拿回去卖掉。
 (x)(advb)和(atbt)(env)拍了张自拍。
 (x)(advb)敲了敲(atbt)(env)，说：“(say)”。
-(atbt)(env)(advb)打了(x)一顿。
-(atbt)(env)(advb)对(x)比了个心，说“(say)”。
+(x)(advb)敲了敲(atbt)(npc)，说：“(say)”。
+(atbt)(npc)(advb)打了(x)一顿。
+(atbt)(npc)(advb)对(x)比了个心，说“(say)”。
 (x)(advb)在(atbt)铁轨上打滚。

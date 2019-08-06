@@ -1,5 +1,5 @@
-(x)发现远处(atbt)树下(env)正(advb)烤肉，便(advb)跑了过去。
-随着(env)(atbt)歌喉，(x)(advb)跳起舞来。
+(x)发现远处(atbt)树下(npc)正(advb)烤肉，便(advb)跑了过去。
+伴随着(npc)(atbt)歌声，(x)(advb)跳起舞来。
 (x)漫步在(atbt)草丛，“(intj)”作响。
-(x)偶然撞见(env)在(atbt)泉水边(advb)洗澡，一见倾心。
-(env)为(x)编织了一枚(atbt)香草指环，(env)羡慕极了。
+(x)偶然撞见(npc)在(atbt)泉水边(advb)洗澡，一见倾心。
+(npc)为(x)编织了一枚(atbt)香草指环，(npc)羡慕极了。
