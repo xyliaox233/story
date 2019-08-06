@@ -25,7 +25,7 @@ public class StoryCreator {
     }
 
     private void default_scene(){
-        story.add(sentence.makeSentence("sub:æˆ‘:chara"));
+        story.add(sentence.makeSentence("sub:ÎÒ:chara"));
         for (int i=0;i<length;i++) {
       //      if (prob.aBoolean(40)) story.add(sentence.makeSentence("default"));
         //    else expand(2);
@@ -35,7 +35,7 @@ public class StoryCreator {
     private void special_scene(){
         String env,chara="";
         ArrayList<String> chara_list=new ArrayList<>();
-        chara_list.add("æˆ‘");
+        chara_list.add("ÎÒ");
         env=wt.getEnv_name(prob.aBoolean(60));
         if(has_charactor){
             chara=wt.getChara(env);
@@ -43,10 +43,10 @@ public class StoryCreator {
         }
 
         if(!has_charactor){
-            story.add("ä»Šå¤©ï¼Œæˆ‘æ¥åˆ°äº†"+env+"ã€‚");
+            story.add("½ñÌì£¬ÎÒÀ´µ½ÁË"+env+"¡£");
         }
         else {
-            story.add("ä»Šå¤©ï¼Œæˆ‘åœ¨"+env+"é‡è§äº†"+chara+"ã€‚");
+            story.add("½ñÌì£¬ÎÒÔÚ"+env+"Óö¼ûÁË"+chara+"¡£");
         }
 
         for (int i=0;i<length;i++){
