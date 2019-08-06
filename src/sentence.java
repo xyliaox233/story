@@ -115,19 +115,10 @@ public class sentence {
                 String[] former4={"因为","之所以"};
                 String[] latter4={"所以","是因为"};
                 int index4=prob.anInt(former4.length);
-                switch (prob.anInt(2)) {
-                    case 0:
-                        getWords();
-                        rt = former4[index4] + ATB_SUB + ATBT_SUB + SUB + tense+advb + prdc + ATB_OBJ + ATBT_OBJ + OBJ + "，";
-                        getWords();
-                        rt=rt+latter4[index4]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
-                        break;
-                    case 1:
-                        getWords();
-                        rt=ATB_SUB + ATBT_SUB + SUB +former4[index4]+tense+advb + prdc + ATB_OBJ + ATBT_OBJ + OBJ + "，";
-                        getWords();
-                        rt=rt+latter4[index4]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
-                }
+                getWords();
+                rt = former4[index4] + ATB_SUB + ATBT_SUB + SUB + tense+advb + prdc + ATB_OBJ + ATBT_OBJ + OBJ + "，";
+                getWords();
+                rt=rt+latter4[index4]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
                 break;
 
 
@@ -148,7 +139,7 @@ public class sentence {
                 int probability=prob.anInt(100);
                 int from,to=0;
 
-                to=to+50;
+                to=to+35;
                 if(probability<to)rt=Declarative();
 
                 from=to;to=to+5;
@@ -157,10 +148,10 @@ public class sentence {
                 from=to;to=to+5;
                 if (from<=probability&&probability<to)rt=Question();
 
-                from=to;to=to+3;
+                from=to;to=to+10;
                 if(from<=probability&&probability<to)rt=Ask_Back();
 
-                from=to;to=to+7;
+                from=to;to=to+10;
                 if(from<=probability&&probability<to)rt= Compare();
 
                 from=to;to=to+10;
@@ -169,7 +160,7 @@ public class sentence {
                 from=to;to=to+10;
                 if(from<=probability&&probability<to)rt= Bei();
 
-                from=to;to=to+10;
+                from=to;to=to+15;
                 if(from<=probability&&probability<to)rt= Sp();
 
                 return rt;
@@ -277,7 +268,7 @@ public class sentence {
 
     private String Declarative(){
         mode=5;
-        getWords();
+        getWords();while (prdc.equals("是"))getWords();
         String rt="";
         String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
         if(prob.aBoolean(50))rt=strings[prob.anInt(strings.length)];
@@ -435,10 +426,10 @@ public class sentence {
         if(prob.aBoolean(40))rt=strings[prob.anInt(strings.length)];
         switch (prob.anInt(2)){
             case 0:
-                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+atb_obj+atbt_obj+obj+"。";
+                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
                 break;
             case 1:
-                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+atbt_obj+"。";
+                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATBT_OBJ+intj+"。";
                 break;
         }
         return rt;
