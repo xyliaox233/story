@@ -1,0 +1,7 @@
+晚上，(x)给(x)做了(atbt)烤(env)。
+我们和(npc)一起品尝了(atbt)烤(env)。
+(x)被蚊子咬了，向(x)抱怨。
+(x)就快被(atb)(atbt)(env)吃掉了，(x)大声唱道：“(say)”尝试分散捕食者的注意。
+(x)就快被(atbt)(npc)吃掉了，(x)大声唱道：“(say)”尝试分散捕食者的注意。
+(x)就快被(atb)(atbt)(env)吃掉了，(x)(advb)(vt)(atb)(atbt)(obj)，尝试分散捕食者的注意。
+(x)就快被(atbt)(npc)吃掉了，(x)(advb)(vt)(atb)(atbt)(obj)，尝试分散捕食者的注意。

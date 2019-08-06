@@ -97,6 +97,24 @@ public class WordTaker {
         return res;
     }
 
+    public String getVt(){
+        ArrayList<String> list=new ArrayList<>();
+        if(pro.aBoolean(50)){
+            list=fileHandler("lib/word/v/ndur/vt.txt");
+        }
+        list=fileHandler("lib/word/v/dur/vt.txt");
+        return list.get(pro.anInt(list.size()));
+    }
+
+    public String getV(){
+        ArrayList<String> list=new ArrayList<>();
+        if(pro.aBoolean(50)){
+            list=fileHandler("lib/word/v/ndur/v.txt");
+        }
+        list=fileHandler("lib/word/v/dur/v.txt");
+        return list.get(pro.anInt(list.size()));
+    }
+
     public String getNpc(String name){
         String path="lib/scene/"+name+"/npc.txt";
         ArrayList<String> list=fileHandler(path);

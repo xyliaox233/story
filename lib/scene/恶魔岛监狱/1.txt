@@ -1,0 +1,6 @@
+(x)高举他手中的(atbt)(env)(advb)炫耀着，被(npc)看见了。
+(x)在晚上偷偷溜进办公室，(advb)把(atb)(atbt)(env)偷了出来。
+(x)(advb)把刚偷到的(atbt)(env)藏进了马桶里，希望不要被发现。
+(x)(advb)花了几年时间，用(atb)(atbt)(env)挖的隧道终于完成了！
+因为被(atbt)发现了携带的(env)，(x)和(npc)(advb)打了起来。
+
