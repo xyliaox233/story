@@ -367,9 +367,11 @@ public class sentence {
                 rt=ATB_SUB+ATBT_SUB+SUB+"不是没有"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"吗？";
                 break;
             case 4:
+                if(prdc.equals("是"))prdc="";
                 rt=ATB_SUB+ATBT_SUB+SUB+"难道不是"+ATB_OBJ+ATBT_OBJ+OBJ+"吗？";
                 break;
             case 5:
+                if(prdc.equals("是"))prdc="";
                 rt=ATB_SUB+ATBT_SUB+SUB+"难道不是"+ATBT_OBJ+"吗？";
                 break;
         }
