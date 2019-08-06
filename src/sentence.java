@@ -13,7 +13,7 @@ public class sentence {
 
     public static void main(String[] args) {
         sentence sentence=new sentence();
-        for(int i=0;i<=10;i++){
+        for(int i=0;i<=50;i++){
             System.out.println(sentence.makeSentence("default"));
         }
     }
@@ -409,7 +409,6 @@ public class sentence {
         while (obj.equals("")||prdc.equals("是"))getWords();
         String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
         if(prob.aBoolean(50))rt=strings[prob.anInt(strings.length)];
-        if(prob.aBoolean(60))rt=strings[prob.anInt(strings.length)];
         rt=rt+ATB_SUB+ATBT_SUB+SUB+tense+advb+"把"+ATB_OBJ+ATBT_OBJ+OBJ+prdc+"。";
         return rt;
     }
@@ -426,16 +425,16 @@ public class sentence {
 
     private String Sp(){
         mode=14;
-        getWords();
+        getWords();while (obj.equals(""))getWords();
         String rt="";
         String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
         if(prob.aBoolean(50))rt=strings[prob.anInt(strings.length)];
         switch (prob.anInt(2)){
             case 0:
-                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
+                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+atb_obj+atbt_obj+obj+"。";
                 break;
             case 1:
-                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATBT_OBJ+"。";
+                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+atbt_obj+"。";
                 break;
         }
         return rt;
