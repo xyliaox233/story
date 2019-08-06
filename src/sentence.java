@@ -279,7 +279,7 @@ public class sentence {
         getWords();
         String rt="";
         String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
-        if(prob.aBoolean(70))rt=strings[prob.anInt(strings.length)];
+        if(prob.aBoolean(50))rt=strings[prob.anInt(strings.length)];
         return rt+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
     }
     private String Question(){
@@ -381,7 +381,7 @@ public class sentence {
         getWords();
         while (obj.equals(""))getWords();
         String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
-        if(prob.aBoolean(60))rt=strings[prob.anInt(strings.length)];
+        if(prob.aBoolean(40))rt=strings[prob.anInt(strings.length)];
         int mode=prob.anInt(5);
         switch (mode){
             case 0:
@@ -408,7 +408,7 @@ public class sentence {
         getWords();
         while (obj.equals("")||prdc.equals("是"))getWords();
         String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
-        if(prob.aBoolean(50))rt=strings[prob.anInt(strings.length)];
+        if(prob.aBoolean(40))rt=strings[prob.anInt(strings.length)];
         rt=rt+ATB_SUB+ATBT_SUB+SUB+tense+advb+"把"+ATB_OBJ+ATBT_OBJ+OBJ+prdc+"。";
         return rt;
     }
@@ -418,7 +418,7 @@ public class sentence {
         getWords();
         while (obj.equals("")||prdc.equals("是")) getWords();
         String[] strings={"这样的话","然后","于是","所以","那么","可是","这样","其实","或许","也许"};
-        if(prob.aBoolean(50))rt=strings[prob.anInt(strings.length)];
+        if(prob.aBoolean(40))rt=strings[prob.anInt(strings.length)];
         rt=rt+ATB_SUB+ATBT_SUB+SUB+tense+"被"+ATB_OBJ+ATBT_OBJ+OBJ+advb+prdc+"。";
         return rt;
     }
@@ -428,7 +428,7 @@ public class sentence {
         getWords();while (OBJ.equals(""))getWords();
         String rt="";
         String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
-        if(prob.aBoolean(50))rt=strings[prob.anInt(strings.length)];
+        if(prob.aBoolean(40))rt=strings[prob.anInt(strings.length)];
         switch (prob.anInt(2)){
             case 0:
                 rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
