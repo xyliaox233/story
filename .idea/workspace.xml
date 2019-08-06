@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="561abc8b-2d50-42e5-b472-654de4dca9b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/character/么么公主.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/叶良辰.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/夜咏几斗.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/大道寺知世.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/孙悟空.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/小花仙.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/希克斯·赛文.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/戴维斯·雪·粉蝶.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/木之本樱.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/村花.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/清纯美女.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/游乐王子.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/王铁柱.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/紫薇.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/蓝精灵.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/魔仙小蓝.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/龙傲天.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/character/龙骑士.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/scene/天空之城/0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/scene/天空之城/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/scene/天空之城/2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/scene/天空之城/chara.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/scene/天空之城/env.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentence.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,32 +39,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-646">
-              <caret line="368" column="19" lean-forward="true" selection-start-line="368" selection-start-column="19" selection-end-line="368" selection-end-column="19" />
+            <state relative-caret-position="148">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
-                <element signature="e#17159#17160#0" expanded="true" />
+                <element signature="e#17166#17167#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/probability.java">
+        <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="98">
+              <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -50,11 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="269">
+              <caret line="141" column="105" selection-start-line="141" selection-start-column="105" selection-end-line="141" selection-end-column="105" />
             </state>
           </provider>
         </entry>
@@ -62,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StoryCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="551">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -122,7 +132,25 @@
             <path>
               <item name="story" type="b2602c69:ProjectViewProjectNode" />
               <item name="story" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="character" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="word" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="story" type="b2602c69:ProjectViewProjectNode" />
@@ -319,9 +347,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14142092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18096514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -457,11 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="269">
+          <caret line="141" column="105" selection-start-line="141" selection-start-column="105" selection-end-line="141" selection-end-column="105" />
         </state>
       </provider>
     </entry>
@@ -470,24 +494,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StoryCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="551">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        <state relative-caret-position="98">
+          <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sentence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646">
-          <caret line="368" column="19" lean-forward="true" selection-start-line="368" selection-start-column="19" selection-end-line="368" selection-end-column="19" />
+        <state relative-caret-position="148">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
-            <element signature="e#17159#17160#0" expanded="true" />
+            <element signature="e#17166#17167#0" expanded="true" />
           </folding>
         </state>
       </provider>
