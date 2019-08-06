@@ -25,14 +25,14 @@ public class sentence {
             mode=1;
         }else mode=2;
 
-        return choose(1);
+        return choose(mode);
     }
     private String SimpleSentence(){
         // 3：特殊句    4：普通句
         if(prob.aBoolean(20)){
             mode=3;
         }else mode=4;
-        return choose(3);
+        return choose(mode);
 
     }
     private String Special(){
