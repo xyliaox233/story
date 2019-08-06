@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="561abc8b-2d50-42e5-b472-654de4dca9b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/么么公主.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/character/么么公主.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/夜咏几斗.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/大道寺知世.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/character/大道寺知世.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/孙悟空.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/戴维斯·雪·粉蝶.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/character/戴维斯·雪·粉蝶.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/木之本樱.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/村花.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/character/村花.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/清纯美女.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/character/清纯美女.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/王铁柱.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/紫薇.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/蓝精灵.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/魔仙小蓝.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/龙傲天.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/character/龙傲天.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/龙骑士.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/adj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/adj.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/adv.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/adv.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/intj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/intj.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/mea.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/mea.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/n.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/n.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/v/dur/v.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/v/dur/v.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/v/dur/vt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/v/dur/vt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/v/ndur/v.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/v/ndur/v.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/v/ndur/vt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/v/ndur/vt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/special/sentence.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/special/sentence.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordReplacer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordReplacer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentence.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,10 +21,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sentence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="141" column="24" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="437" column="52" selection-start-line="437" selection-start-column="52" selection-end-line="437" selection-end-column="52" />
               <folding>
-                <element signature="e#16733#16734#0" expanded="true" />
+                <element signature="e#16977#16978#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,19 +33,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
+            <state relative-caret-position="193">
+              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="596">
+              <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/lib/special/sentence.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -111,6 +93,7 @@
         <option value="$PROJECT_DIR$/src/WordTaker.java" />
         <option value="$PROJECT_DIR$/src/WordReplacer.java" />
         <option value="$PROJECT_DIR$/src/sentence.java" />
+        <option value="$PROJECT_DIR$/lib/special/sentence.txt" />
       </list>
     </option>
   </component>
@@ -147,6 +130,12 @@
               <item name="story" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="scene" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="special" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="story" type="b2602c69:ProjectViewProjectNode" />
@@ -355,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565085144877</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Merge branch 'master' of https://github.com/xyliaox233/story&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1565098670474</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1565098670474</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -373,7 +369,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.7875354" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6983003" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -501,13 +497,6 @@
     <entry file="file://$PROJECT_DIR$/lib/word/intj.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StoryCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-742">
@@ -515,22 +504,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sentence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="141" column="24" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
+        <state relative-caret-position="120">
+          <caret line="437" column="52" selection-start-line="437" selection-start-column="52" selection-end-line="437" selection-end-column="52" />
           <folding>
-            <element signature="e#16733#16734#0" expanded="true" />
+            <element signature="e#16977#16978#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/lib/special/sentence.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
