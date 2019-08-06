@@ -11,12 +11,7 @@ public class sentence {
     //1-单句 2-复句 3-特殊句 4-普通句 5-陈述句 6-疑问句 7-感叹句 8-反问句 9-比较句 10-把 11-被 12-环境事件 13-角色事件 14-是
     ArrayList<String[]> save=new ArrayList<>();
 
-    public static void main(String[] args) {
-        sentence sentence=new sentence();
-        for(int i=0;i<=50;i++){
-            System.out.println(sentence.makeSentence("default"));
-        }
-    }
+
 
     public String makeSentence(String message){
         this.message=message;
@@ -100,13 +95,13 @@ public class sentence {
                     case 0:
                         getWords();
                         rt=former3[index3]+ATB_SUB+ATBT_SUB+SUB+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"，";
-                        getWords();
+                        getWords();while (prdc.contains("过")||prdc.contains("了"))getWords();
                         rt=rt+ATB_SUB+ATBT_SUB+SUB+latter3[index3]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
                         break;
                     case 1:
                         getWords();
                         rt=ATB_SUB+ATBT_SUB+SUB+former3[index3]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"，";
-                        getWords();
+                        getWords();while (prdc.contains("过")||prdc.contains("了"))getWords();
                         rt=rt+ATB_SUB+ATBT_SUB+SUB+latter3[index3]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
                         break;
                 }
@@ -115,9 +110,9 @@ public class sentence {
                 String[] former4={"因为","之所以"};
                 String[] latter4={"所以","是因为"};
                 int index4=prob.anInt(former4.length);
-                getWords();
+                getWords();if(prdc.equals("是")&&tense.equals("正在"))tense="";
                 rt = former4[index4] + ATB_SUB + ATBT_SUB + SUB + tense+advb + prdc + ATB_OBJ + ATBT_OBJ + OBJ + "，";
-                getWords();
+                getWords();if(prdc.equals("是")&&tense.equals("正在"))tense="";
                 rt=rt+latter4[index4]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
                 break;
 
@@ -277,7 +272,7 @@ public class sentence {
     private String Question(){
         mode=6;
         String rt="";
-        getWords();
+        getWords();while (prdc.equals("是"))getWords();
         int mode=prob.anInt(8);
         switch (mode){
             case 0:
@@ -350,20 +345,20 @@ public class sentence {
                 rt=ATB_SUB+ATBT_SUB+SUB+"难道不会"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"吗？";
                 break;
             case 1:
+                while (prdc.equals("是"))getWords();
                 rt=ATB_SUB+ATBT_SUB+SUB+"难道没有"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"吗？";
                 break;
             case 2:
                 rt=ATB_SUB+ATBT_SUB+SUB+"怎么不"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"了？";
                 break;
             case 3:
+                while (prdc.equals("是"))getWords();
                 rt=ATB_SUB+ATBT_SUB+SUB+"不是没有"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"吗？";
                 break;
             case 4:
-                if(prdc.equals("是"))prdc="";
                 rt=ATB_SUB+ATBT_SUB+SUB+"难道不是"+ATB_OBJ+ATBT_OBJ+OBJ+"吗？";
                 break;
             case 5:
-                if(prdc.equals("是"))prdc="";
                 rt=ATB_SUB+ATBT_SUB+SUB+"难道不是"+ATBT_OBJ+"吗？";
                 break;
         }
@@ -419,7 +414,7 @@ public class sentence {
 
     private String Sp(){
         mode=14;
-        getWords();while (obj.equals(""))getWords();
+        getWords();while (OBJ.equals(""))getWords();
         if(tense.equals("正在"))tense="";
         String rt="";
         String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
@@ -429,13 +424,15 @@ public class sentence {
                 rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+"是"+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
                 break;
             case 1:
-                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+"是"+ATBT_OBJ+intj+"。";
+                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+"是"+wt.getConst("atbt").getVal()+intj+"。";
                 break;
             case 2:
-                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+"不是"+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
+                if(tense.equals("会"))rt=rt+ ATB_SUB+ATBT_SUB+SUB+"不会是"+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
+                else rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+"不是"+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
                 break;
             case 3:
-                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+"不是"+ATBT_OBJ+intj+"。";
+                if(tense.equals("会"))rt=rt+ ATB_SUB+ATBT_SUB+SUB+"不会是"+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
+                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+"不是"+wt.getConst("atbt").getVal()+intj+"。";
                 break;
         }
         return rt;
