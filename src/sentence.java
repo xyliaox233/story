@@ -63,6 +63,7 @@ public class sentence {
                         getWords();MessageHandler();
                         rt=rt+latter1[index1]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"¡£";
                         break;
+
                     case 1:
                         getWords();MessageHandler();
                         if(tense.equals("ÕýÔÚ")||tense.contains("½«"))tense="";
