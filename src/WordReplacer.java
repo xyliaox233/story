@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class WordReplacer {
     private WordTaker wt=new WordTaker();
     private probability pro=new probability();
-    private String[] constnames1={"(advb)","(atb)","(atbt)","(intj)","(sub)","(obj)","(prdc)","(say)","(env)","(x)"};
+    private String[] constnames1={"\\("+"advb"+"\\)","\\("+"atb"+"\\)","\\("+"atbt"+"\\)","\\)"+"intj"+"\\)","\\("+"sub"+"\\)","\\("+"obj"+"\\)","\\("+"prdc"+"\\)","\\("+"say"+"\\)","\\("+"env"+"\\)","\\("+"x"+"\\)"};
     private String[] constnames2={"advb","atb","atbt","intj","sub","obj","prdc","say","env","x"};
 
     public String replaceAll(String str, ArrayList<String> chara,String env){
