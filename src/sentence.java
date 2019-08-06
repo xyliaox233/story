@@ -424,12 +424,18 @@ public class sentence {
         String rt="";
         String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
         if(prob.aBoolean(40))rt=strings[prob.anInt(strings.length)];
-        switch (prob.anInt(2)){
+        switch (prob.anInt(4)){
             case 0:
-                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
+                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+"是"+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
                 break;
             case 1:
-                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATBT_OBJ+intj+"。";
+                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+"是"+ATBT_OBJ+intj+"。";
+                break;
+            case 2:
+                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+"不是"+ATB_OBJ+ATBT_OBJ+OBJ+intj+"。";
+                break;
+            case 3:
+                rt=rt+ ATB_SUB+ATBT_SUB+SUB+tense+"不是"+ATBT_OBJ+intj+"。";
                 break;
         }
         return rt;

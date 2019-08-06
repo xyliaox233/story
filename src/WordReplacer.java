@@ -18,7 +18,7 @@ public class WordReplacer {
                     if(pro.aBoolean(50))replaced="";
                     str=str.replaceFirst(constnames1[i],replaced);
                 }
-                else if(i>=3||i<=5){
+                else if(i>=3&&i<=5){
                     sc=wt.getConst(constnames2[i]);
                     str=str.replaceFirst(constnames1[i],sc.getVal());
                 }
