@@ -42,7 +42,16 @@ public class WordTaker {
                 res=new prdc();
                 rs=(prdc)res;
                 int n=pro.anInt(5);
-                rs.setTense(pro.anInt(3));
+                int tense=1;
+                int probability=pro.anInt(100);
+                int from,to=0;
+                to=to+60;
+                if(probability<to){}
+                from=to;to=to+20;
+                if(from<=probability&&probability<to)tense=0;
+                from=to;to=to+20;
+                if(from<=probability&&probability<to)tense=2;
+                rs.setTense(tense);
                 switch (n){
                     case 0:
                         list=fileHandler("lib/word/v/sp.txt");

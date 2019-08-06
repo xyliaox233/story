@@ -8,13 +8,13 @@ public class sentence {
     private String SUB,OBJ="",ATBT_SUB="",ATBT_OBJ="",ATB_SUB="",ATB_OBJ="";//final-decided by message
     private String message="default";
     private int mode;
-    //1-µ¥¾ä 2-¸´¾ä 3-ÌØÊâ¾ä 4-ÆÕÍ¨¾ä 5-³ÂÊö¾ä 6-ÒÉÎÊ¾ä 7-¸ĞÌ¾¾ä 8-·´ÎÊ¾ä 9-±È½Ï¾ä 10-°Ñ 11-±» 12-»·¾³ÊÂ¼ş 13-½ÇÉ«ÊÂ¼ş
+    //1-å•å¥ 2-å¤å¥ 3-ç‰¹æ®Šå¥ 4-æ™®é€šå¥ 5-é™ˆè¿°å¥ 6-ç–‘é—®å¥ 7-æ„Ÿå¹å¥ 8-åé—®å¥ 9-æ¯”è¾ƒå¥ 10-æŠŠ 11-è¢« 12-ç¯å¢ƒäº‹ä»¶ 13-è§’è‰²äº‹ä»¶ 14-æ˜¯
     ArrayList<String[]> save=new ArrayList<>();
 
 
     public String makeSentence(String message){
         this.message=message;
-        // 1:µ¥¾ä     2£º¸´¾ä
+        // 1:å•å¥     2ï¼šå¤å¥
         if(prob.aBoolean(90)){
             mode=1;
         }else mode=2;
@@ -22,7 +22,7 @@ public class sentence {
         return choose(mode);
     }
     private String SimpleSentence(){
-        // 3£ºÌØÊâ¾ä    4£ºÆÕÍ¨¾ä
+        // 3ï¼šç‰¹æ®Šå¥    4ï¼šæ™®é€šå¥
         if(prob.aBoolean(20)){
             mode=3;
         }else mode=4;
@@ -36,41 +36,94 @@ public class sentence {
     }
     private String CompositeSentence(){
         String rt="";
-        int mode=0;
-        String[] former1={"Ò»±ß","²»µ«","ÒòÎª","ËäÈ»","²»¹Ü"};
-        String[] latter1={"Ò»±ß","¶øÇÒ","ËùÒÔ","µ«ÊÇ","¶¼"};
-        String[] former2={"Ò»µ©","¾¡¹Ü","²»ÂÛ","Èç¹û"};
-        String[] latter2={"¾Í","¶¼","¶¼","¾Í"};
-        String[] former3={"ÒòÎª","Ö®ËùÒÔ"};
-        String[] latter3={"ËùÒÔ","ÊÇÒòÎª"};
-        switch (prob.anInt(3)){
-            case 0:
-                mode=prob.anInt(former1.length);
-                getWords();
-                MessageHandler();
-                rt=ATB_SUB+ATBT_SUB+SUB+tense+former1[mode]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"£¬";
-                getWords();
-                MessageHandler();
-                rt=rt+latter1[mode]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"¡£";
+        switch (prob.anInt(5)){
+            case 0://ä¸€è¾¹â€¦â€¦ä¸€è¾¹â€¦â€¦
+                getWords();MessageHandler();
+                if(prdc.contains("è¿‡")||prdc.contains("äº†"))prdc=delete_de(prdc);
+                rt=ATB_SUB+ATBT_SUB+SUB+tense+"ä¸€è¾¹"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ï¼Œ";
+                getWords();MessageHandler();
+                rt=rt+"ä¸€è¾¹"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ã€‚";
                 break;
-            case 1:
-                mode=prob.anInt(former2.length);
-                getWords();
-                MessageHandler();
-                rt=former2[mode]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"£¬";
-                getWords();
-                MessageHandler();
-                rt=rt+ATB_SUB+ATBT_SUB+SUB+latter2[mode]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"¡£";
+            case 1://ä¸ä½†â€¦â€¦è€Œä¸”â€¦â€¦ï¼Œä¸ä»…â€¦â€¦è¿˜â€¦â€¦
+                String[] former1={"ä¸ä½†","ä¸ä»…"};
+                String[] latter1={"è€Œä¸”","è¿˜"};
+                int index1=prob.anInt(former1.length);
+                switch (prob.anInt(3)){
+                    case 0:
+                        getWords();MessageHandler();
+                        if(tense.equals("æ­£åœ¨")||tense.equals("å°†"))tense="";
+                        rt=ATB_SUB+ATBT_SUB+SUB+tense+former1[index1]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ï¼Œ";
+                        getWords();MessageHandler();
+                        rt=rt+latter1[index1]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ã€‚";
+                        break;
+                    case 1:
+                        getWords();MessageHandler();
+                        if(tense.equals("æ­£åœ¨")||tense.equals("å°†"))tense="";
+                        rt=ATB_SUB+ATBT_SUB+SUB+tense+former1[index1]+"æ˜¯"+wt.getConst("atbt").getVal()+"ï¼Œ"+latter1[index1]+"æ˜¯"+wt.getConst("atbt").getVal()+"ã€‚";
+                        break;
+                    case 2:
+                        getWords();MessageHandler();
+                        if(tense.equals("æ­£åœ¨")||tense.equals("å°†"))tense="";
+                        rt=ATB_SUB+ATBT_SUB+SUB+tense+former1[index1]+"å¾ˆ"+delete_de(wt.getConst("atbt").getVal())+"ï¼Œ"+latter1[index1]+"å¾ˆ"+delete_de(wt.getConst("atbt").getVal())+"ã€‚";
+                        break;
+                }
                 break;
-            case 2:
-                mode=prob.anInt(former3.length);
-                getWords();
-                MessageHandler();
-                rt=former3[mode]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"£¬";
-                getWords();
-                MessageHandler();
-                rt=rt+latter3[mode]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"¡£";
+            case 2://ä¸è®ºæ˜¯å¦â€¦â€¦éƒ½åº”è¯¥â€¦â€¦
+                switch (prob.anInt(2)) {
+                    case 0:
+                        getWords();MessageHandler();
+                        rt = "ä¸è®º" + ATB_SUB + ATBT_SUB +SUB+ "æ˜¯å¦" +advb + prdc + ATB_OBJ + ATBT_OBJ + OBJ + "ï¼Œ";
+                        getWords();MessageHandler();
+                        rt=rt+ATB_SUB+ATBT_SUB+SUB+"éƒ½åº”è¯¥"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ã€‚";
+                        break;
+                    case 1:
+                        getWords();MessageHandler();
+                        rt=ATB_SUB + ATBT_SUB +SUB+"ä¸è®ºæ˜¯å¦"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ï¼Œ";
+                        getWords();MessageHandler();
+                        rt=rt+"éƒ½åº”è¯¥"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ã€‚";
+                        break;
+                }
                 break;
+            case 3://ä¸€æ—¦â€¦â€¦å°±â€¦â€¦ï¼Œå¦‚æœâ€¦â€¦å°±â€¦â€¦ï¼Œå“ªæ€•â€¦â€¦ä¹Ÿä¸ä¼šâ€¦â€¦ï¼Œå³ä½¿â€¦â€¦ä¹Ÿä¸ä¼šâ€¦â€¦
+                String[] former3={"ä¸€æ—¦","å¦‚æœ","å“ªæ€•","å³ä½¿"};
+                String[] latter3={"å°±","å°±","ä¹Ÿä¸ä¼š","ä¹Ÿä¸ä¼š"};
+                int index3=prob.anInt(former3.length);
+                switch (prob.anInt(2)){
+                    case 0:
+                        getWords();MessageHandler();
+                        rt=former3[index3]+ATB_SUB+ATBT_SUB+SUB+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ï¼Œ";
+                        getWords();MessageHandler();
+                        rt=rt+ATB_SUB+ATBT_SUB+SUB+latter3[index3]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ã€‚";
+                        break;
+                    case 1:
+                        getWords();MessageHandler();
+                        rt=ATB_SUB+ATBT_SUB+SUB+former3[index3]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ï¼Œ";
+                        getWords();MessageHandler();
+                        rt=rt+ATB_SUB+ATBT_SUB+SUB+latter3[index3]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ã€‚";
+                        break;
+                }
+                break;
+            case 4://å› ä¸ºâ€¦â€¦æ‰€ä»¥â€¦â€¦ï¼Œä¹‹æ‰€ä»¥â€¦â€¦æ˜¯å› ä¸ºâ€¦â€¦
+                String[] former4={"å› ä¸º","ä¹‹æ‰€ä»¥"};
+                String[] latter4={"æ‰€ä»¥","æ˜¯å› ä¸º"};
+                int index4=prob.anInt(former4.length);
+                switch (prob.anInt(2)) {
+                    case 0:
+                        getWords();MessageHandler();
+                        rt = former4[index4] + ATB_SUB + ATBT_SUB + SUB + tense+advb + prdc + ATB_OBJ + ATBT_OBJ + OBJ + "ï¼Œ";
+                        getWords();MessageHandler();
+                        rt=rt+latter4[index4]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ã€‚";
+                        break;
+                    case 1:
+                        getWords();MessageHandler();
+                        rt=ATB_SUB + ATBT_SUB + SUB +former4[index4]+tense+advb + prdc + ATB_OBJ + ATBT_OBJ + OBJ + "ï¼Œ";
+                        getWords();MessageHandler();
+                        rt=rt+latter4[index4]+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ã€‚";
+                }
+                break;
+
+
+
         }
         return rt;
     }
@@ -87,7 +140,7 @@ public class sentence {
                 int probability=prob.anInt(100);
                 int from,to=0;
 
-                to=to+60;
+                to=to+50;
                 if(probability<to)rt=Declarative();
 
                 from=to;to=to+5;
@@ -108,6 +161,9 @@ public class sentence {
                 from=to;to=to+10;
                 if(from<=probability&&probability<to)rt= Bei();
 
+                from=to;to=to+10;
+                if(from<=probability&&probability<to)rt= Sp();
+
                 return rt;
 
         }
@@ -116,56 +172,64 @@ public class sentence {
     private void getWords(){
         sub=wt.getConst("sub").getVal();
         prdc p= ( prdc ) wt.getConst("prdc");
+
+        advb="";
+        if(prob.aBoolean(40)) advb=wt.getConst("advb").getVal();
+
+        atb_sub="";
+        if(prob.aBoolean(15)) atb_sub=wt.getConst("atb").getVal();
+        atbt_sub="";
+        if(prob.aBoolean(40))atbt_sub=atbt_sub+wt.getConst("atbt").getVal();
+        atb_obj="";
+        if(prob.aBoolean(15)) atb_obj=wt.getConst("atb").getVal();
+        atbt_obj="";
+        if(prob.aBoolean(40))atbt_obj=wt.getConst("atbt").getVal();
+
         prdc=p.getVal();
         if(p.isTrans()){
             obj=wt.getConst("obj").getVal();
         }else obj="";
+        if(p.isSp()){
+            obj=wt.getConst("obj").getVal();
+            advb="";
+        }
 
         switch (p.getTense()){
             case 0:
-                if(prob.aBoolean(50))tense="Ôø¾­";
+                if(prob.aBoolean(30)){
+                    String[] strings={"æ›¾ç»","ä»¥å‰"};
+                    tense=strings[prob.anInt(2)];
+                }
                 else tense="";
                 if(!p.isSp()){
-                    if(p.isDur())prdc=prdc+"×Å";
+                    if(p.isDur())prdc=prdc+"ç€";
                     else {
-                        String[] strings={"ÁË","¹ı"};
+                        String[] strings={"äº†","è¿‡"};
                         prdc=prdc+strings[prob.anInt(strings.length)];
                     }
                 }
                 break;
             case 2:
-                if(prob.aBoolean(50))tense="½«";
+                if(prob.aBoolean(30))tense="å°†";
                 else tense="";
                 if(!p.isSp()){
-                    if(p.isDur())prdc=prdc+"×Å";
+                    if(p.isDur())prdc=prdc+"ç€";
                     else {
-                        String[] strings={"»á","Òª"};
+                        String[] strings={"ä¼š","è¦"};
                         tense=tense+strings[prob.anInt(strings.length)];
                     }
                 }
                 break;
             case 1:
                 if(p.isDur()){
-                    if(prob.aBoolean(50))tense="ÕıÔÚ";
+                    if(prob.aBoolean(30))tense="æ­£åœ¨";
                     else tense="";
-                    prdc=prdc+"×Å";
+                    prdc=prdc+"ç€";
                 }
         }
 
-        advb="";
-        if(prob.aBoolean(40)) advb=wt.getConst("advb").getVal();
-
-        atb_sub="";
-        if(prob.aBoolean(30)) atb_sub=wt.getConst("atb").getVal();
-        atbt_sub="";
-        if(prob.aBoolean(40))atbt_sub=atbt_sub+wt.getConst("atbt").getVal();
-        atb_obj="";
-        if(prob.aBoolean(30)) atb_obj=wt.getConst("atb").getVal();
-        atbt_obj="";
-        if(prob.aBoolean(40))atbt_obj=wt.getConst("atbt").getVal();
-
         intj="";
-        if(prob.aBoolean(5)) intj=wt.getConst("intj").getVal();
+        if(prob.aBoolean(15)) intj=wt.getConst("intj").getVal();
     }
 
     private void MessageHandler(){
@@ -177,6 +241,8 @@ public class sentence {
         }
         if(!message.equals("default")){
             String[] strings=message.split(":");
+        //    for (int i=0;i<strings.length;i++) System.out.print(strings[i]+"; ");
+        //    System.out.println();
             switch (strings[0]){
                 case "sub":
                     SUB=strings[1];
@@ -186,7 +252,7 @@ public class sentence {
                     }
                     break;
                 case "obj":
-                    if(!OBJ.equals(""))OBJ=strings[1];
+                    if(!OBJ.equals("")&&!strings[1].equals(""))OBJ=strings[1];
                     if(strings[strings.length-1].equals("chara")){
                         ATB_OBJ="";
                         isChara_obj="chara";
@@ -194,6 +260,7 @@ public class sentence {
                     break;
             }
         }
+
 
         String[] sub_obj={SUB,isChara_sub,OBJ,isChara_obj};
         save.add(0,sub_obj);
@@ -203,7 +270,7 @@ public class sentence {
         mode=5;
         getWords();
         MessageHandler();
-        return ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+intj+"¡£";
+        return ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+intj+"ã€‚";
     }
     private String Question(){
         mode=6;
@@ -213,28 +280,28 @@ public class sentence {
         int mode=prob.anInt(8);
         switch (mode){
             case 0:
-                rt=ATB_SUB+ATBT_SUB+SUB+tense+"ÔÚÄÄÀï"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ÄØ£¿";
+                rt=ATB_SUB+ATBT_SUB+SUB+tense+"åœ¨å“ªé‡Œ"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"å‘¢ï¼Ÿ";
                 break;
             case 1:
-                rt="ÊÇÊ²Ã´"+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ÄØ£¿";
+                rt="æ˜¯ä»€ä¹ˆ"+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"å‘¢ï¼Ÿ";
                 break;
             case 2:
-                rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+"Ê²Ã´ÄØ£¿";
+                rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+"ä»€ä¹ˆå‘¢ï¼Ÿ";
                 break;
             case 3:
-                rt=ATB_SUB+ATBT_SUB+SUB+tense+"ÊÇÔõÃ´"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"µÄ£¿";
+                rt=ATB_SUB+ATBT_SUB+SUB+tense+"æ˜¯æ€ä¹ˆ"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"çš„ï¼Ÿ";
                 break;
             case 4:
-                rt="ÎªÊ²Ã´"+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"£¿";
+                rt="ä¸ºä»€ä¹ˆ"+ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ï¼Ÿ";
                 break;
             case 5:
-                rt=ATB_SUB+ATBT_SUB+SUB+"Ê²Ã´Ê±ºò"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ÄØ£¿";
+                rt=ATB_SUB+ATBT_SUB+SUB+"ä»€ä¹ˆæ—¶å€™"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"å‘¢ï¼Ÿ";
                 break;
             case 6:
-                rt="¶àÉÙ"+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"£¿";
+                rt="å¤šå°‘"+ATBT_SUB+SUB+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ï¼Ÿ";
                 break;
             case 7:
-                rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+"¶àÉÙ"+ATBT_OBJ+OBJ+"£¿";
+                rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+prdc+"å¤šå°‘"+ATBT_OBJ+OBJ+"ï¼Ÿ";
                 break;
         }
         return rt;
@@ -244,30 +311,30 @@ public class sentence {
         getWords();
         MessageHandler();
         String rt="";
-        String[] strings2={"¡£","£¡","£¡£¡","£¡£¡£¡"};
+        String[] strings2={"ã€‚","ï¼","ï¼ï¼","ï¼ï¼ï¼"};
         if (prob.aBoolean(50)){
             this.intj=wt.getConst("intj").getVal();
         }
         switch (prob.anInt(3)){
             case 0:
                 if(prob.aBoolean(50)) {
-                    if(prob.aBoolean(50))rt=rt+"Õâ";
-                    rt=rt+SUB+"Ì«"+delete_de(wt.getConst("atbt").getVal())+"ÁË"+strings2[prob.anInt(strings2.length)];
+                    if(prob.aBoolean(50))rt=rt+"è¿™";
+                    rt=rt+SUB+"å¤ª"+delete_de(wt.getConst("atbt").getVal())+"äº†"+strings2[prob.anInt(strings2.length)];
                 }
                 else {
-                    String[] strings1={"Õæ","ºÃ"};
+                    String[] strings1={"çœŸ","å¥½"};
                     if(prob.aBoolean(50)){
-                        rt=rt+"Õâ";
+                        rt=rt+"è¿™";
                         if(prob.aBoolean(50))rt=rt+wt.getConst("atbt").getVal();
                     }
                     rt=rt+ATBT_SUB+SUB+strings1[prob.anInt(strings1.length)]+delete_de(wt.getConst("atbt").getVal())+intj+strings2[prob.anInt(strings2.length)];
                 }
                 break;
             case 1:
-                rt=SUB+intj+strings2[prob.anInt(strings2.length)];
+                rt=ATBT_SUB+SUB+wt.getConst("intj").getVal()+strings2[prob.anInt(strings2.length)];
                 break;
             case 2:
-                rt=intj+strings2[prob.anInt(strings2.length)];
+                rt=wt.getConst("intj").getVal()+strings2[prob.anInt(strings2.length)];
                 break;
         }
         return rt;
@@ -275,21 +342,28 @@ public class sentence {
     private String Ask_Back(){
         mode=8;
         getWords();
+        while (obj.equals(""))getWords();
         MessageHandler();
         String rt="";
-        int mode=prob.anInt(2);
+        int mode=prob.anInt(6);
         switch (mode){
             case 0:
-                rt=ATB_SUB+ATBT_SUB+SUB+"ÄÑµÀ"+tense+"²»"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"Âğ£¿";
+                rt=ATB_SUB+ATBT_SUB+SUB+"éš¾é“ä¸ä¼š"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"å—ï¼Ÿ";
                 break;
             case 1:
-                rt=ATB_SUB+ATBT_SUB+SUB+"ÄÑµÀ"+tense+"Ã»ÓĞ"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"Âğ£¿";
+                rt=ATB_SUB+ATBT_SUB+SUB+"éš¾é“æ²¡æœ‰"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"å—ï¼Ÿ";
                 break;
             case 2:
-                rt=ATB_SUB+ATBT_SUB+SUB+"ÔõÃ´¾Í"+tense+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ÁË£¿";
+                rt=ATB_SUB+ATBT_SUB+SUB+"æ€ä¹ˆä¸"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"äº†ï¼Ÿ";
                 break;
             case 3:
-                rt=ATB_SUB+ATBT_SUB+SUB+tense+"²»ÊÇÃ»"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"Âğ£¿";
+                rt=ATB_SUB+ATBT_SUB+SUB+"ä¸æ˜¯æ²¡æœ‰"+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"å—ï¼Ÿ";
+                break;
+            case 4:
+                rt=ATB_SUB+ATBT_SUB+SUB+"éš¾é“ä¸æ˜¯"+ATB_OBJ+ATBT_OBJ+OBJ+"å—ï¼Ÿ";
+                break;
+            case 5:
+                rt=ATB_SUB+ATBT_SUB+SUB+"éš¾é“ä¸æ˜¯"+ATBT_OBJ+"å—ï¼Ÿ";
                 break;
         }
         return rt;
@@ -297,47 +371,56 @@ public class sentence {
     private String Compare(){
         mode=9;
         String rt="";
-        while (obj.equals("")){
-            getWords();
-            MessageHandler();
-        }
+        getWords();
+        while (obj.equals(""))getWords();
+        MessageHandler();
+
         int mode=prob.anInt(5);
         switch (mode){
             case 0:
-                rt=ATB_SUB+SUB+"±È"+atbt_obj+obj+delete_de(wt.getConst("atbt").getVal())+"¡£";
+                rt=ATB_SUB+SUB+"æ¯”"+atbt_obj+obj+delete_de(wt.getConst("atbt").getVal())+"ã€‚";
                 break;
             case 1:
-                rt=ATB_SUB+SUB+"²»±È"+atbt_obj+obj+delete_de(wt.getConst("atbt").getVal())+"¡£";
+                rt=ATB_SUB+SUB+"ä¸æ¯”"+atbt_obj+obj+delete_de(wt.getConst("atbt").getVal())+"ã€‚";
                 break;
             case 2:
-                rt=ATB_SUB+SUB+"¾ÍÏñ"+atbt_obj+obj+"Ò»Ñù"+delete_de(wt.getConst("atbt").getVal())+"¡£";
+                rt=ATB_SUB+SUB+"å°±åƒ"+atbt_obj+obj+"ä¸€æ ·"+delete_de(wt.getConst("atbt").getVal())+"ã€‚";
                 break;
             case 3:
-                rt=ATB_SUB+SUB+"»¹²»Èç"+atbt_obj+obj+delete_de(wt.getConst("atbt").getVal())+"¡£";
+                rt=ATB_SUB+SUB+"è¿˜ä¸å¦‚"+atbt_obj+obj+delete_de(wt.getConst("atbt").getVal())+"ã€‚";
                 break;
             case 4:
-                rt=ATB_SUB+SUB+"ºÍ"+atbt_obj+obj+"Ò»Ñù"+delete_de(wt.getConst("atbt").getVal())+"¡£";
+                rt=ATB_SUB+SUB+"å’Œ"+atbt_obj+obj+"ä¸€æ ·"+delete_de(wt.getConst("atbt").getVal())+"ã€‚";
                 break;
         }
         return rt;
     }
     private String Ba(){
         mode=10;
-        while (obj.equals("")){
-            getWords();
-            MessageHandler();
-        }
-        String rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+"°Ñ"+ATB_OBJ+ATBT_OBJ+OBJ+prdc+"¡£";
+        getWords();
+        while (obj.equals("")||prdc.equals("æ˜¯"))getWords();
+        MessageHandler();
+        String rt=ATB_SUB+ATBT_SUB+SUB+tense+advb+"æŠŠ"+ATB_OBJ+ATBT_OBJ+OBJ+prdc+"ã€‚";
         return rt;
     }
     private String Bei(){
         mode=11;
-        while (obj.equals("")){
-            getWords();
-            MessageHandler();
-        }
-        String rt=ATB_SUB+ATBT_SUB+SUB+tense+"±»"+ATB_OBJ+ATBT_OBJ+OBJ+advb+prdc+"¡£";
+        getWords();
+        while (obj.equals("")||prdc.equals("æ˜¯")) getWords();
+        MessageHandler();
+        String rt=ATB_SUB+ATBT_SUB+SUB+tense+"è¢«"+ATB_OBJ+ATBT_OBJ+OBJ+advb+prdc+"ã€‚";
         return rt;
+    }
+
+    private String Sp(){
+        mode=14;
+        switch (prob.anInt(2)){
+            case 0:
+                return ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"ã€‚";
+            case 1:
+                return ATB_SUB+ATBT_SUB+SUB+tense+prdc+ATBT_OBJ+"ã€‚";
+        }
+        return null;
     }
 
     public String makeEnvSentence(String env,ArrayList<String> chara){
@@ -356,13 +439,6 @@ public class sentence {
         return str.substring(0,length-1);
     }
 
-    public String getSUB() {
-        return SUB;
-    }
-
-    public String getOBJ() {
-        return OBJ;
-    }
 
     public int getMode() {
         return mode;

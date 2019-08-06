@@ -27,8 +27,9 @@ public class StoryCreator {
     private void default_scene(){
         story.add(sentence.makeSentence("sub:我:chara"));
         for (int i=0;i<length;i++) {
-            if (prob.aBoolean(30)) story.add(sentence.makeSentence("default"));
-            else expand(3);
+      //      if (prob.aBoolean(40)) story.add(sentence.makeSentence("default"));
+        //    else expand(2);
+            expand(2);
         }
     }
     private void special_scene(){
@@ -83,6 +84,7 @@ public class StoryCreator {
                 strings.add(sentence.save.get(0)[0]+":"+sentence.save.get(0)[1]);
                 if(!sentence.save.get(0)[2].equals(""))strings.add(sentence.save.get(0)[2]+":"+sentence.save.get(0)[3]);
             }
+        //    System.out.println(strings);
             story.add(sentence.makeSentence(sub_or_obj[prob.anInt(2)]+strings.get(prob.anInt(strings.size()))));
         }
     }
