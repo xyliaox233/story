@@ -426,6 +426,7 @@ public class sentence {
     private String Sp(){
         mode=14;
         getWords();while (obj.equals(""))getWords();
+        if(tense.equals("正在"))tense="";
         String rt="";
         String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
         if(prob.aBoolean(40))rt=strings[prob.anInt(strings.length)];
