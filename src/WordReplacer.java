@@ -3,8 +3,9 @@ import java.util.ArrayList;
 public class WordReplacer {
     private WordTaker wt=new WordTaker();
     private probability pro=new probability();
-    private String[] constnames1={"\\("+"advb"+"\\)","\\("+"atb"+"\\)","\\("+"atbt"+"\\)","\\)"+"intj"+"\\)","\\("+"sub"+"\\)","\\("+"obj"+"\\)","\\("+"prdc"+"\\)","\\("+"say"+"\\)","\\("+"env"+"\\)","\\("+"x"+"\\)"};
+    private String[] constnames1={"\\(advb\\)","\\(atb\\)","\\(atbt\\)","\\)intj\\)","\\(sub\\)","\\(obj\\)","\\(prdc\\)","\\(say\\)","\\(env\\)","\\(x\\)"};
     private String[] constnames2={"advb","atb","atbt","intj","sub","obj","prdc","say","env","x"};
+    private String[] constnames3={"(advb)","(atb)","(atbt)","(intj)","(sub)","(obj)","(prdc)","(say)","(env)","(x)"};
 
     public String replaceAll(String str, ArrayList<String> chara,String env){
         sentence stc=new sentence();
@@ -38,8 +39,8 @@ public class WordReplacer {
     }
 
     private boolean check(String str){
-        for(int i=0;i<constnames1.length;i++){
-            if(str.indexOf(constnames1[i])!=-1) return true;
+        for(int i=0;i<constnames3.length;i++){
+            if(str.indexOf(constnames3[i])!=-1) return true;
         }
         return false;
     }
