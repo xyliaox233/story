@@ -97,6 +97,12 @@ public class WordTaker {
         return res;
     }
 
+    public String getNpc(String name){
+        String path="lib/scene/"+name+"/npc.txt";
+        ArrayList<String> list=fileHandler(path);
+        return list.get(pro.anInt(list.size()));
+    }
+
     public String getSps(){
         String path="lib/special/sentence.txt";
         ArrayList<String> list=fileHandler(path);

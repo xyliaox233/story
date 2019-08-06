@@ -3,9 +3,9 @@ import java.util.ArrayList;
 public class WordReplacer {
     private WordTaker wt=new WordTaker();
     private probability pro=new probability();
-    private String[] constnames1={"\\(advb\\)","\\(atb\\)","\\(atbt\\)","\\)intj\\)","\\(sub\\)","\\(obj\\)","\\(prdc\\)","\\(say\\)","\\(env\\)","\\(x\\)"};
-    private String[] constnames2={"advb","atb","atbt","intj","sub","obj","prdc","say","env","x"};
-    private String[] constnames3={"(advb)","(atb)","(atbt)","(intj)","(sub)","(obj)","(prdc)","(say)","(env)","(x)"};
+    private String[] constnames1={"\\(advb\\)","\\(atb\\)","\\(atbt\\)","\\)intj\\)","\\(sub\\)","\\(obj\\)","\\(prdc\\)","\\(say\\)","\\(env\\)","\\(x\\)","\\)npc\\)"};
+    private String[] constnames2={"advb","atb","atbt","intj","sub","obj","prdc","say","env","x","npc"};
+    private String[] constnames3={"(advb)","(atb)","(atbt)","(intj)","(sub)","(obj)","(prdc)","(say)","(env)","(x)","(npc)"};
 
     public String replaceAll(String str, ArrayList<String> chara,String env){
         sentence stc=new sentence();
@@ -36,6 +36,10 @@ public class WordReplacer {
                             int replaced=pro.anInt(chara.size());
                             str=str.replaceFirst(constnames1[i],chara.get(replaced));
                             chara.remove(replaced);
+                            break;
+                        case 10:
+                            if(env==null) break;
+                            str=str.replaceFirst(constnames1[i],wt.getNpc(env));
                             break;
                     }
                 }
