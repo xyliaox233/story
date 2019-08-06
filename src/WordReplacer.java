@@ -12,7 +12,13 @@ public class WordReplacer {
         sentence_const sc;
         while (check(str)){
             for(int i=0;i<constnames1.length;i++){
-                if(i<=6){
+                if(i<=2){
+                    sc=wt.getConst(constnames2[i]);
+                    String replaced=sc.getVal();
+                    if(pro.aBoolean(50))replaced="";
+                    str=str.replaceFirst(constnames1[i],replaced);
+                }
+                else if(i>=3||i<=6){
                     sc=wt.getConst(constnames2[i]);
                     str=str.replaceFirst(constnames1[i],sc.getVal());
                 }
