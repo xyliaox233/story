@@ -409,7 +409,6 @@ public class sentence {
         while (obj.equals("")||prdc.equals("是"))getWords();
         String[] strings={"然后","于是","所以","那么","可是","这样的话","这样","其实","或许","也许"};
         if(prob.aBoolean(50))rt=strings[prob.anInt(strings.length)];
-        if(prob.aBoolean(60))rt=strings[prob.anInt(strings.length)];
         rt=rt+ATB_SUB+ATBT_SUB+SUB+tense+advb+"把"+ATB_OBJ+ATBT_OBJ+OBJ+prdc+"。";
         return rt;
     }

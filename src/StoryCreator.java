@@ -27,9 +27,11 @@ public class StoryCreator {
     private void default_scene(){
         story.add(sentence.makeSentence("sub:Œ“:chara"));
         for (int i=0;i<length;i++) {
-      //      if (prob.aBoolean(40)) story.add(sentence.makeSentence("default"));
-        //    else expand(2);
-            expand(2);
+            if (prob.aBoolean(60)) {
+                if(prob.aBoolean(40))story.add(sentence.makeSentence("default"));
+                else story.add(sentence.makeSentence("sub:Œ“:chara"));
+            }
+            else expand(2);
         }
     }
     private void special_scene(){
