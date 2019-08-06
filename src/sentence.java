@@ -58,19 +58,19 @@ public class sentence {
                 switch (prob.anInt(3)){
                     case 0:
                         getWords();MessageHandler();
-                        if(tense.equals("正在")||tense.equals("将"))tense="";
+                        if(tense.equals("正在")||tense.contains("将"))tense="";
                         rt=ATB_SUB+ATBT_SUB+SUB+tense+former1[index1]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"，";
                         getWords();MessageHandler();
                         rt=rt+latter1[index1]+advb+prdc+ATB_OBJ+ATBT_OBJ+OBJ+"。";
                         break;
                     case 1:
                         getWords();MessageHandler();
-                        if(tense.equals("正在")||tense.equals("将"))tense="";
+                        if(tense.equals("正在")||tense.contains("将"))tense="";
                         rt=ATB_SUB+ATBT_SUB+SUB+tense+former1[index1]+"是"+wt.getConst("atbt").getVal()+"，"+latter1[index1]+"是"+wt.getConst("atbt").getVal()+"。";
                         break;
                     case 2:
                         getWords();MessageHandler();
-                        if(tense.equals("正在")||tense.equals("将"))tense="";
+                        if(tense.equals("正在")||tense.contains("将"))tense="";
                         rt=ATB_SUB+ATBT_SUB+SUB+tense+former1[index1]+"很"+delete_de(wt.getConst("atbt").getVal())+"，"+latter1[index1]+"很"+delete_de(wt.getConst("atbt").getVal())+"。";
                         break;
                 }
