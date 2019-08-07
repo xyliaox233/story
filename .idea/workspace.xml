@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="561abc8b-2d50-42e5-b472-654de4dca9b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/么么公主.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/character/么么公主.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/夜咏几斗.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/大道寺知世.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/character/大道寺知世.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/孙悟空.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/戴维斯·雪·粉蝶.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/character/戴维斯·雪·粉蝶.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/木之本樱.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/村花.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/character/村花.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/清纯美女.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/character/清纯美女.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/王铁柱.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/紫薇.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/蓝精灵.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/魔仙小蓝.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/龙傲天.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/character/龙傲天.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/character/龙骑士.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/adj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/adj.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/adv.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/adv.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/intj.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/intj.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/mea.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/mea.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/n.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/n.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/v/dur/v.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/v/dur/v.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/v/dur/vt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/v/dur/vt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/v/ndur/v.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/v/ndur/v.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/word/v/ndur/vt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/word/v/ndur/vt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordReplacer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordReplacer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sentence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/scene/non daily scene.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scene/non daily scene.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -125,16 +100,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="406" />
-    <option name="y" value="5" />
+    <option name="x" value="332" />
+    <option name="y" value="15" />
     <option name="width" value="1355" />
-    <option name="height" value="1044" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,6 +131,12 @@
             <path>
               <item name="story" type="b2602c69:ProjectViewProjectNode" />
               <item name="story" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -162,7 +144,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,6 +172,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.sentence">
+    <configuration name="StoryCreator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StoryCreator" />
+      <module name="story" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordTaker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WordTaker" />
+      <module name="story" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sentence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sentence" />
+      <module name="story" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.sentence" />
@@ -332,11 +334,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565085144877</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Merge branch 'master' of https://github.com/xyliaox233/story&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1565161695067</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1565161695067</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31709000" />
+    <option name="totallyTimeSpent" value="32345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -488,19 +497,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sentence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="e#17132#17133#0" expanded="true" />
-            <element signature="e#17159#17160#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WordTaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="100" column="49" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
+        <state relative-caret-position="2090">
+          <caret line="110" column="29" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -509,8 +514,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WordReplacer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="589">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
         </state>
       </provider>
     </entry>
