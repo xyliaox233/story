@@ -1,0 +1,9 @@
+小花仙(advb)对(npc)说：“我(vt)(sub)花，但(vt)(obj)花，但其实最(atbt)还是(env)花啦。”
+一阵(atbt)风吹来，小花仙突然变得只有(env)一般大小。
+虽然身为(sub)花仙，小花仙却总是(advb)看着(env)，(advb)叹道：“果然我还是想成为(obj)花仙啊。”
+小花仙(advb)看着(atbt)(env)，想着如果能把(npc)拐回家种(env)花就好了。
+(atb)(atbt)蝴蝶(advb)(vt)小花仙，她羞红了脸。
+捏着(atbt)裙摆，小花仙(advb)飞了起来，落在(atbt)(env)上面。
+小花仙很喜欢(atbt)(npc)，于是将一片(atbt)翅膀送给了(npc)。
+其实小花仙不喜欢(atbt)(env)，但还是(advb)(vt)了(npc)。
+(advb)喝着(atbt)(env)熬成的(sub)糖浆，小花仙赞不绝口。

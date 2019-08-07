@@ -1,0 +1,9 @@
+(atbt)骚男(advb)(vt)(atbt)金色泳衣。
+骚男(advb)笑了笑，说：“你好骚啊。”
+路边的(npc)看到(atbt)骚男，(advb)掏出(atbt)相机拍了下来。
+骚男(advb)取下(atbt)墨镜，说：“(say)”
+骚男(advb)(vt)(atbt)蕾丝短裤。
+骚男(advb)(v)，真是我见犹怜。
+骚男(advb)(vt)(atbt)紧身小西装，(npc)觉得很不错。
+骚男(advb)(vt)(atbt)(env)，(npc)惊呆了。
+骚男(advb)邀请(atbt)(npc)和(x)一起跳(atbt)舞。
