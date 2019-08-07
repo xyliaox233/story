@@ -1,0 +1,7 @@
+看见(atb)(atbt)(npc)(advb)(v)，(x)和(x)也想加入他们。
+看见(atb)(atbt)(npc)(advb)(vt)(atb)(atbt)(obj)，(x)和(x)也想加入他们。
+(x)被(npc)(advb)咬了一口，就快变异了，于是渴求(x)用(atbt)(env)杀了自己。
+(x)被(npc)(advb)咬了一口，就快变异了，于是渴求(x)用(atbt)(obj)杀了自己。
+(x)的手臂被(npc)(advb)咬了一口，就快变异了，于是渴求(x)用(atbt)(env)为自己截肢。
+(x)的大腿被(npc)(advb)咬了一口，就快变异了，于是渴求(x)用(atbt)(env)为自己截肢。
+(x)的小腿被(npc)(advb)咬了一口，就快变异了，于是渴求(x)用(atbt)(env)为自己截肢。
