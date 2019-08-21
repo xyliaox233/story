@@ -1,0 +1,14 @@
+(npc)邀请(x)一起吃(env)，(x)有点害羞。
+(x)发现幼儿园(atbt)房间里堆满了(atbt)(env)，发出了“(intj)”的惊叹。
+(x)(advb)学习在地上寻找(env)的技巧，但还是不如(atbt)(npc)。
+(npc)、(npc)和(npc)喊(x)和他们一起打麻将，(atbt)(x)(advb)同意了。
+(x)看到(atbt)(env)，想起当年(atbt)(env)，忽然有些难过。
+(x)说(env)其实不是(env)而是(env)，被(npc)按在地上一阵(atbt)毒打。
+(x)笑眯眯地对(npc)(advb)说：“(say)”，(npc)转身就跑。
+(npc)捡起地上的(env)朝(x)丢去，(x)开心极了。
+(x)爬上了长满(env)的(atbt)(sub)树，帮(npc)取落在树上的(env)。
+(x)上了一节(env)课，听得云里雾里，(npc)只好给他开小灶。
+(x)因为在课堂上(advb)玩(env)被罚站了。
+(npc)总是用(atbt)(env)诱惑小朋友们睡午觉，(x)也心动辽。
+(x)上了一节(env)课，却(advb)睡着了。
+(npc)说(env)课最简单，(x)(advb)发出了(intj)的怪叫。

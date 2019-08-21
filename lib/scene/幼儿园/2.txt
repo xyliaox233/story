@@ -1,0 +1,6 @@
+(x)和(x)窝在角落里(advb)说(npc)的坏话，被(npc)和(npc)打了一顿。
+(npc)和(npc)(advb)往(x)的包里放(env)，(x)吓哭了。
+(x)吓唬(npc)说(env)是(atbt)，(x)和(npc)都笑了。
+(x)(advb)说：“(say)”，(npc)(advb)瞄了(x)一眼，笑出了声。
+(npc)总是(advb)扯(x)(atbt)小辫子。
+(x)和(npc)(advb)唱着“(say)”，(x)听到(advb)哭了。

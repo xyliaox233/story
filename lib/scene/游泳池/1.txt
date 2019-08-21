@@ -1,0 +1,6 @@
+(npc)(advb)看着穿着泳装的(x)，眼睛都发直了。
+(x)看到(atbt)(npc)，捂住羞红的脸(advb)跑开了。
+(x)不小心把(atbt)(env)掉进了(atbt)泳池里，还是(npc)帮忙捞出来的。
+坐在(env)旁边，看着(atbt)(env)和(atbt)(env)，(x)不禁(advb)哭了起来。
+(npc)(advb)跟着(x)，怕是陷入了(atbt)爱情。
+(x)为(npc)的美貌深深折服，(advb)去要微信号。
