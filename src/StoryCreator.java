@@ -10,7 +10,7 @@ public class StoryCreator {
 
     public static void main(String[] args) {
         StoryCreator sc=new StoryCreator();
-        sc.choose(0,sc.prob.aBoolean(50),8);
+        sc.choose(1,sc.prob.aBoolean(50),2);
         for (int i=0;i<sc.story.size();i++){
             System.out.println(sc.story.get(i));
         }
@@ -55,14 +55,14 @@ public class StoryCreator {
             String main="";String[] sub_or_obj={"sub:","obj:"};
             int probability=prob.anInt(100);
             int from,to=0;
-            to=to+60;
+            to=to+20;
             if(probability<to){
                 String message=sub_or_obj[prob.anInt(2)]+":"+chara_list.get(prob.anInt(chara_list.size()))+":chara";
                 main=sentence.makeSentence(message);
             }
-            from=to;to=to+20;
-            if(from<=probability&&probability<to)main=sentence.makeCharaSentence(chara);
-            from=to;to=to+20;
+            from=to;to=to+40;
+            if(from<=probability&&probability<to)if(has_charactor)main=sentence.makeCharaSentence(chara);
+            from=to;to=to+40;
             if(from<=probability&&probability<to)main=sentence.makeEnvSentence(env,chara_list);
             story.add(main);
 
