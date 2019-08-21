@@ -440,13 +440,13 @@ public class sentence {
 
     public String makeEnvSentence(String env,ArrayList<String> chara){
         mode=12;
-        String string=wt.getEnvEvent(env,chara.size());
+        String string=wt.getEnvEvent(env,prob.anInt(chara.size())+1);
         return wr.replaceAll(string,chara,env);
     }
-    public String makeCharaSentence(String chara){
+    public String makeCharaSentence(String chara,String env,ArrayList<String> charalist){
         mode=13;
         String string=wt.getCharaEvent(chara);
-        return wr.replaceAll(string,null,null);
+        return wr.replaceAll(string,charalist,env);
     }
 
     private String delete_de(String str){
